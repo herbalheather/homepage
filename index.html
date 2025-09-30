@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herbal HomeSchool - Explosive fun with nature-inspired learning! Free printables, epic tools, teen success hacks, business boosters, and mom-powered life managers for ages 5-60. Get hooked now!">
+    <meta property="og:title" content="Herbal HomeSchool - Ignite Your Learning Revolution!">
+    <meta property="og:description" content="Blast off into a world of joyful education, smart tools, and life-changing guides. From kid adventures to adult wins - get addicted to growth!">
+    <meta property="og:image" content="assets/img/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Herbal HomeSchool — Explode Your World with Epic Learning Adventures! 🌟🌿</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #7AA37A;
+            --secondary-beige: #F6EFE6;
+            --text-charcoal: #2F2F2F;
+            --accent-amber: #E9A24E;
+            --success-green: #4CAF50;
+        }
+        body { font-family: 'Poppins', sans-serif; background: var(--secondary-beige); margin:0; padding:0; }
+        .hero {
+            background: linear-gradient(135deg, var(--primary-green), #5B8B5B, var(--accent-amber));
+            color: white; text-align: center; padding: 100px 20px;
+            border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top:0; left:0; width:100%; height:100%;
+            background: url('assets/img/leaves-pattern.png') repeat; opacity:0.15;
+            animation: slideBackground 20s linear infinite;
+        }
+        @keyframes slideBackground { from{background-position:0 0;} to{background-position:100px 100px;} }
+        .hero h1 { font-family:'Playfair Display',serif; font-size:3.5em; margin:0; text-shadow:3px 3px 6px rgba(0,0,0,0.4); }
+        .hero p { font-size:1.5em; max-width:900px; margin:20px auto; }
+        .tools-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin:20px 0; }
+        .tool-card { background:#fff; padding:25px; border-radius:15px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
+        .tool-card a { display:inline-block; background:var(--success-green); color:white; padding:12px 25px; border-radius:8px; text-decoration:none; margin-top:15px; font-weight:600; }
+        .tool-card a:hover { background:#388E3C; }
+        .waitlist-section { background:linear-gradient(135deg, var(--primary-green), var(--accent-amber)); color:white; padding:40px; border-radius:15px; text-align:center; margin:50px 0; }
+        .waitlist-form { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:20px; }
+        .waitlist-form input { padding:12px; border:none; border-radius:8px; font-size:1em; width:250px; }
+        .waitlist-form button { background:white; color:var(--primary-green); border:none; padding:12px 25px; border-radius:8px; font-weight:600; cursor:pointer; }
+        .waitlist-form button:hover { background:var(--accent-amber); color:white; }
+        footer { text-align:center; padding:25px; background:var(--primary-green); color:white; margin-top:50px; }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('.waitlist-form');
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    if (!form.checkValidity()) {
+                        e.preventDefault();
+                        alert('Please enter a valid email address.');
+                        return;
+                    }
+                    if (!form.action.includes('formspree.io')) {
+                        e.preventDefault();
+                        alert('Thank you for joining the waitlist!');
+                        form.reset();
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="hero">
+        <h1>🌿 Herbal HomeSchool — Unlock Your Ultimate Learning Superpower NOW! 🚀🌟</h1>
+        <p>Blast into free printables, mind-blowing tools, and guides that fuel epic wins for kids, teens, and adults! Get hooked in seconds!</p>
+    </div>
+    <div class="container">
+        <div class="tools-grid">
+            <div class="tool-card">
+                <h3>Pay Stub Calculator (LIVE)</h3>
+                <p>Crank out pay stubs fast for freelance, business, or personal needs.</p>
+                <a href="https://calculator-ea5.pages.dev/" target="_blank" rel="noopener" aria-label="Launch Pay Stub Calculator">Launch Calculator</a>
+            </div>
+        </div>
+        <div class="waitlist-section">
+            <h2>Join the Launch Waitlist</h2>
+            <p>Enter your email — we’ll send a short launch note and occasional updates. No spam. You can unsubscribe anytime.</p>
+            <form class="waitlist-form" action="https://formspree.io/f/mkgqrjwq" method="POST">
+                <input type="email" name="email" placeholder="you@example.com" required>
+                <button type="submit">Get Notified</button>
+            </form>
+            <p>If you don't set up Formspree yet, the form will still give a local confirmation in your browser (safe fallback).</p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Herbal HomeSchool | Forged with 🔥 for unstoppable families everywhere</p>
+    </footer>
+</body>
+</html>
