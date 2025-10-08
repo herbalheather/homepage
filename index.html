@@ -3,93 +3,1050 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Herbal HomeSchool - Explosive fun with nature-inspired learning! Free printables, epic tools, teen success hacks, business boosters, and mom-powered life managers for ages 5-60. Get hooked now!">
-    <meta property="og:title" content="Herbal HomeSchool - Ignite Your Learning Revolution!">
-    <meta property="og:description" content="Blast off into a world of joyful education, smart tools, and life-changing guides. From kid adventures to adult wins - get addicted to growth!">
-    <meta property="og:image" content="assets/img/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Herbal HomeSchool — Explode Your World with Epic Learning Adventures! 🌟🌿</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Herbal HomeSchool | Verified Grok Academy Educator</title>
+    <meta name="description" content="Holistic homeschooling combining coding, nature studies, and real-world life skills. Taught by Heather H., Grok Academy Certified Educator.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-green: #7AA37A;
-            --secondary-beige: #F6EFE6;
-            --text-charcoal: #2F2F2F;
-            --accent-amber: #E9A24E;
-            --success-green: #4CAF50;
+            --forest: #2d5016;
+            --sage: #7a9b76;
+            --cream: #faf7f2;
+            --warm-white: #ffffff;
+            --charcoal: #1a1a1a;
+            --soft-gray: #4a4a4a;
+            --gold: #d4a574;
+            --mint: #e8f5e3;
         }
-        body { font-family: 'Poppins', sans-serif; background: var(--secondary-beige); margin:0; padding:0; }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        /* HEADER - Clean, minimal, professional */
+        header {
+            background: var(--warm-white);
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.4em;
+            color: var(--forest);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo span {
+            color: var(--sage);
+            font-weight: 400;
+        }
+        
+        nav a {
+            margin-left: 40px;
+            color: var(--soft-gray);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--forest);
+        }
+        
+        /* HERO - Sophisticated, spacious */
         .hero {
-            background: linear-gradient(135deg, var(--primary-green), #5B8B5B, var(--accent-amber));
-            color: white; text-align: center; padding: 100px 20px;
-            border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2); position: relative; overflow: hidden;
+            padding: 100px 0 120px;
+            background: linear-gradient(180deg, var(--warm-white) 0%, var(--cream) 100%);
         }
-        .hero::before {
-            content: ''; position: absolute; top:0; left:0; width:100%; height:100%;
-            background: url('assets/img/leaves-pattern.png') repeat; opacity:0.15;
-            animation: slideBackground 20s linear infinite;
+        
+        .hero-content {
+            max-width: 800px;
         }
-        @keyframes slideBackground { from{background-position:0 0;} to{background-position:100px 100px;} }
-        .hero h1 { font-family:'Playfair Display',serif; font-size:3.5em; margin:0; text-shadow:3px 3px 6px rgba(0,0,0,0.4); }
-        .hero p { font-size:1.5em; max-width:900px; margin:20px auto; }
-        .tools-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin:20px 0; }
-        .tool-card { background:#fff; padding:25px; border-radius:15px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
-        .tool-card a { display:inline-block; background:var(--success-green); color:white; padding:12px 25px; border-radius:8px; text-decoration:none; margin-top:15px; font-weight:600; }
-        .tool-card a:hover { background:#388E3C; }
-        .waitlist-section { background:linear-gradient(135deg, var(--primary-green), var(--accent-amber)); color:white; padding:40px; border-radius:15px; text-align:center; margin:50px 0; }
-        .waitlist-form { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:20px; }
-        .waitlist-form input { padding:12px; border:none; border-radius:8px; font-size:1em; width:250px; }
-        .waitlist-form button { background:white; color:var(--primary-green); border:none; padding:12px 25px; border-radius:8px; font-weight:600; cursor:pointer; }
-        .waitlist-form button:hover { background:var(--accent-amber); color:white; }
-        footer { text-align:center; padding:25px; background:var(--primary-green); color:white; margin-top:50px; }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.querySelector('.waitlist-form');
-            if (form) {
-                form.addEventListener('submit', (e) => {
-                    if (!form.checkValidity()) {
-                        e.preventDefault();
-                        alert('Please enter a valid email address.');
-                        return;
-                    }
-                    if (!form.action.includes('formspree.io')) {
-                        e.preventDefault();
-                        alert('Thank you for joining the waitlist!');
-                        form.reset();
-                    }
-                });
+        
+        .hero h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 3.5em;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            color: var(--charcoal);
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.35em;
+            line-height: 1.6;
+            color: var(--soft-gray);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .credentials-bar {
+            display: flex;
+            gap: 30px;
+            margin: 40px 0 50px;
+            flex-wrap: wrap;
+        }
+        
+        .credential-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+            color: var(--soft-gray);
+            font-weight: 500;
+            background: var(--mint);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--sage);
+        }
+        
+        .credential-badge i {
+            color: var(--forest);
+            font-size: 1.1em;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 16px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: var(--forest);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #234012;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(45,80,22,0.2);
+        }
+        
+        .btn-secondary {
+            background: var(--gold);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #c49563;
+            transform: translateY(-1px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--forest);
+            border: 2px solid var(--forest);
+        }
+        
+        .btn-outline:hover {
+            background: var(--forest);
+            color: white;
+        }
+        
+        /* ABOUT SECTION */
+        .about-section {
+            background: var(--warm-white);
+            padding: 80px 0;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .about-card {
+            padding: 30px;
+            border-left: 3px solid var(--sage);
+            background: var(--cream);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .about-card h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .about-card h3 i {
+            color: var(--forest);
+            font-size: 1.2em;
+        }
+        
+        .about-card ul {
+            list-style: none;
+            line-height: 1.9;
+            color: var(--soft-gray);
+        }
+        
+        .about-card li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            border-bottom: 1px solid rgba(122,155,118,0.1);
+            font-weight: 500;
+        }
+        
+        .about-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .about-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--forest);
+            font-weight: 700;
+            font-size: 0.8em;
+        }
+
+        .about-card .recognition-li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 0;
+        }
+
+        .about-card .recognition-li i {
+            color: var(--gold);
+            font-size: 1em;
+            min-width: 16px;
+        }
+        
+        /* RESOURCES SECTION */
+        .resources-section {
+            padding: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+        
+        .section-header h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+        
+        .section-header p {
+            font-size: 1.1em;
+            color: var(--soft-gray);
+        }
+        
+        .tabs-wrapper {
+            background: var(--warm-white);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .tab-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--cream);
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            padding: 14px 28px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--soft-gray);
+            transition: all 0.3s;
+            font-size: 0.95em;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+        }
+        
+        .tab-btn:hover {
+            color: var(--forest);
+        }
+        
+        .tab-btn.active {
+            color: var(--forest);
+            border-bottom-color: var(--forest);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .resource-card {
+            padding: 28px;
+            background: var(--cream);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        
+        .resource-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            color: var(--charcoal);
+            font-weight: 600;
+        }
+        
+        .resource-card p {
+            font-size: 0.95em;
+            color: var(--soft-gray);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        
+        .resource-card a {
+            color: var(--forest);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .resource-card a:after {
+            content: "→";
+            transition: transform 0.3s;
+        }
+        
+        .resource-card a:hover:after {
+            transform: translateX(4px);
+        }
+        
+        /* TOOLS TAB SPECIFIC */
+        .tool-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: var(--mint);
+            border-radius: 8px;
+            border: 1px solid var(--sage);
+        }
+        
+        .tool-card i {
+            font-size: 2em;
+            color: var(--forest);
+        }
+        
+        .tool-card h3 {
+            margin-bottom: 5px;
+        }
+        
+        .tool-card p {
+            margin: 0;
+            color: var(--soft-gray);
+            font-size: 0.9em;
+        }
+        
+        .tool-card a {
+            margin-left: auto;
+            background: var(--forest);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            text-decoration: none;
+        }
+        
+        .tool-card a:hover {
+            background: #234012;
+        }
+        
+        /* WAITLIST SECTION */
+        .waitlist-section {
+            background: linear-gradient(135deg, var(--forest) 0%, #1f3d0f 100%);
+            padding: 100px 0;
+            margin: 80px 0 0;
+        }
+        
+        .waitlist-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .waitlist-content h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .waitlist-content p {
+            font-size: 1.15em;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 40px;
+        }
+        
+        .waitlist-form {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--charcoal);
+            font-size: 0.9em;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid var(--cream);
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95em;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--sage);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .submit-btn {
+            background: var(--forest);
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #234012;
+        }
+        
+        #success-message {
+            display: none;
+            background: var(--mint);
+            color: var(--forest);
+            padding: 16px;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: var(--warm-white);
+            padding: 60px 0;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        
+        footer p {
+            color: var(--soft-gray);
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: var(--forest);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .helper-note {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--mint);
+            border-radius: 8px;
+            border-left: 4px solid var(--sage);
+        }
+        
+        .helper-note h4 {
+            color: var(--forest);
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        
+        .helper-note code {
+            background: rgba(0,0,0,0.05);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-family: 'Monaco', monospace;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
             }
-        });
-    </script>
+            
+            header {
+                padding: 20px 0;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1em;
+            }
+            
+            .credentials-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                text-align: center;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-header h2 {
+                font-size: 2em;
+            }
+            
+            .tabs-wrapper {
+                padding: 25px;
+            }
+            
+            .tab-nav {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .tab-btn {
+                text-align: left;
+                padding: 12px 0;
+                border-bottom: 1px solid var(--cream);
+            }
+            
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .waitlist-form {
+                padding: 30px 20px;
+            }
+            
+            .tool-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .tool-card a {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>🌿 Herbal HomeSchool — Unlock Your Ultimate Learning Superpower NOW! 🚀🌟</h1>
-        <p>Blast into free printables, mind-blowing tools, and guides that fuel epic wins for kids, teens, and adults! Get hooked in seconds!</p>
-    </div>
-    <div class="container">
-        <div class="tools-grid">
-            <div class="tool-card">
-                <h3>Pay Stub Calculator (LIVE)</h3>
-                <p>Crank out pay stubs fast for freelance, business, or personal needs.</p>
-                <a href="https://calculator-ea5.pages.dev/" target="_blank" rel="noopener" aria-label="Launch Pay Stub Calculator">Launch Calculator</a>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Herbal <span>HomeSchool</span></div>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#waitlist">Contact</a>
+                </nav>
             </div>
         </div>
-        <div class="waitlist-section">
-            <h2>Join the Launch Waitlist</h2>
-            <p>Enter your email — we’ll send a short launch note and occasional updates. No spam. You can unsubscribe anytime.</p>
-            <form class="waitlist-form" action="https://formspree.io/f/mkgqrjwq" method="POST">
-                <input type="email" name="email" placeholder="you@example.com" required>
-                <button type="submit">Get Notified</button>
-            </form>
-            <p>If you don't set up Formspree yet, the form will still give a local confirmation in your browser (safe fallback).</p>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Holistic homeschooling that blends coding, nature, and life skills.</h1>
+                <p class="subtitle">Elevate your homeschool journey with expert-led programs from Heather H., a Grok Academy Certified Educator and Google-recognized innovator in healthcare informatics and holistic wellness. Unlock your child's potential through proven, transformative curricula.</p>
+                
+                <div class="credentials-bar">
+                    <div class="credential-badge"><i class="fas fa-certificate"></i>Grok Academy Certified Educator</div>
+                    <div class="credential-badge"><i class="fas fa-trophy"></i>Google Women Techmakers</div>
+                    <div class="credential-badge"><i class="fas fa-graduation-cap"></i>MS Healthcare Management & Informatics</div>
+                    <div class="credential-badge"><i class="fas fa-leaf"></i>Certified Holistic Wellness Coach</div>
+                </div>
+                
+                <div class="cta-group">
+                    <a href="#" class="btn btn-primary" onclick="alert('Stripe integration placeholder - Add your link here!')">Join Grok Academy Classes</a>
+                    <a href="https://mamasaidthis.pages.dev/" target="_blank" rel="noopener" class="btn btn-secondary">Mom Help Central</a>
+                    <a href="#waitlist" class="btn btn-outline">Join Waitlist</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-graduation-cap"></i>Academic Credentials</h3>
+                    <ul>
+                        <li>Master of Science in Healthcare Management with Informatics Concentration</li>
+                        <li>Bachelor of Science in Management (Dean's List, Presidential Award)</li>
+                        <li>Associate of Applied Science in English - Navarro College</li>
+                        <li>250 + completed college credits</li>
+                        <li>Upsilon Phi Delta Honor Society Member</li>
+                    </ul>
+                </div>
+                
+                <div class="about-card">
+                    <h3><i class="fas fa-certificate"></i>Professional Certifications</h3>
+                    <ul>
+                        <li>Project Management Professional (PMP)</li>
+                        <li>HIPAA Compliance Specialist</li>
+                        <li>OSHA Compliance Certification</li>
+                        <li>Certified Nursing Assistant (CNA)</li>
+                        <li>ServSafe Food Safety Manager</li>
+                        <li>Medical Terminology I-III</li>
+                        <li>Psychology</li>
+                        <li>Introduction to Anthropology</li>
+                        <li>TESOL</li>
+                        <li>Early Childhood Education</li>
+                        <li>Holistic health and wellness advisor</li>
+                        <li>Herbalogy and astrology coach</li>
+                    </ul>
+                </div>
+                
+                <div class="about-card">
+                    <h3><i class="fas fa-award"></i>Professional Recognition</h3>
+                    <ul>
+                        <li class="recognition-li"><i class="fas fa-users"></i> Google Women Techmakers Program Alumna</li>
+                        <li class="recognition-li"><i class="fas fa-cloud"></i> Google Cloud Innovator Award Recipient</li>
+                        <li class="recognition-li"><i class="fas fa-rocket"></i> Google Early Access Developer Program</li>
+                        <li class="recognition-li"><i class="fas fa-brain"></i> Microsoft Certified: Azure AI Engineer Associate</li>
+                        <li class="recognition-li"><i class="fas fa-cogs"></i> Microsoft Certified: Power Platform Developer Associate</li>
+                        <li class="recognition-li"><i class="fas fa-robot"></i> Microsoft AI-900: AI Fundamentals</li>
+                        <li class="recognition-li"><i class="fas fa-code"></i> Microsoft Certified: AI Development & Office Suite Expert</li>
+                        <li class="recognition-li"><i class="fas fa-laptop-code"></i> Self-Taught Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resources-section" id="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Learning Resources</h2>
+                <p>Expertly vetted, free resources for holistic education in coding, nature studies, games, and practical tools. Designed for seamless integration into your homeschool curriculum.</p>
+            </div>
+            
+            <div class="tabs-wrapper">
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="openTab(event, 'coding')">Coding & Math</button>
+                    <button class="tab-btn" onclick="openTab(event, 'nature')">Nature & Holistic</button>
+                    <button class="tab-btn" onclick="openTab(event, 'games')">Educational Games</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tools')">Free Tools</button>
+                </div>
+
+                <!-- CODING TAB -->
+                <div id="coding" class="tab-content active">
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h3>Scratch (MIT)</h3>
+                            <p>Visual block-based coding for creating animations, games, and interactive stories. Ideal for young learners.</p>
+                            <a href="https://scratch.mit.edu/" target="_blank" rel="noopener">Visit Scratch</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>CodeCombat</h3>
+                            <p>Learn Python and JavaScript through epic game-based adventures. Builds real coding proficiency.</p>
+                            <a href="https://codecombat.com/" target="_blank" rel="noopener">Visit CodeCombat</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>CodeMonkey</h3>
+                            <p>Coding puzzles that teach logic and problem-solving via engaging character adventures.</p>
+                            <a href="https://www.codemonkey.com/" target="_blank" rel="noopener">Visit CodeMonkey</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Grok Academy</h3>
+                            <p>Professional coding curriculum with discounted access through Heather's verified classes.</p>
+                            <a href="https://groklearning.com/" target="_blank" rel="noopener">Explore Grok Academy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NATURE TAB -->
+                <div id="nature" class="tab-content">
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h3>Mother Earth News</h3>
+                            <p>All-in-one archive for homesteading: herbal recipes (willow bark tea, fire cider, elderberry syrup), survival crafts, printables, and kid activities.</p>
+                            <a href="https://www.motherearthnews.com/" target="_blank" rel="noopener">Visit Mother Earth News</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>LearningHerbs</h3>
+                            <p>Herbal-focused free PDFs/recipes for teas, syrups/tinctures, flashcards, and kid games (Wildcraft! printouts).</p>
+                            <a href="https://www.learningherbs.com/" target="_blank" rel="noopener">Visit LearningHerbs</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Homestead Honey</h3>
+                            <p>Kid-centric activities: foraging, elderberry syrup, salve-making, with 30+ free projects and printables.</p>
+                            <a href="https://homestead-honey.com/" target="_blank" rel="noopener">Visit Homestead Honey</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Intentional Homesteading</h3>
+                            <p>100+ practical skills list: herbal remedies, survival, crafts with downloadable PDF worksheets.</p>
+                            <a href="https://www.intentionalhomesteading.com/" target="_blank" rel="noopener">Visit Intentional Homesteading</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>The Survival Mom</h3>
+                            <p>Family preparedness: herbal first aid, rainwater collection, survival bingo, and scenario worksheets.</p>
+                            <a href="https://thesurvivalmom.com/" target="_blank" rel="noopener">Visit The Survival Mom</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Incredible Edible Landscapes</h3>
+                            <p>Homesteading guide: herbal garden plans, rainwater setups, syrup recipes, and project trackers.</p>
+                            <a href="https://incredibleediblelandscapes.com/" target="_blank" rel="noopener">Visit Incredible Edible</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Mountain Rose Herbs</h3>
+                            <p>Guides/recipes: willow bark tea, tincture basics, foraging tips, dosage charts, and plant ID sheets.</p>
+                            <a href="https://mountainroseherbs.com/" target="_blank" rel="noopener">Visit Mountain Rose Herbs</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>The Pioneer Woman</h3>
+                            <p>Print-friendly recipes: fire cider, herbal soaps, rain barrel DIYs, recipe journals, and kitchen challenges.</p>
+                            <a href="https://www.thepioneerwoman.com/" target="_blank" rel="noopener">Visit The Pioneer Woman</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Wellness Mama</h3>
+                            <p>Elderberry syrup recipe, herbal teas, remedy planners, foraging checklists, and storage tips.</p>
+                            <a href="https://wellnessmama.com/" target="_blank" rel="noopener">Visit Wellness Mama</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Primal Survivor</h3>
+                            <p>Illustrated guides: friction fire, bow drill worksheets, herbal wildcrafting, and nature hunts.</p>
+                            <a href="https://www.primalsurvivor.net/" target="_blank" rel="noopener">Visit Primal Survivor</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>The Spruce Crafts</h3>
+                            <p>DIY herbal soap (lavender infusions), printable templates, fencing/weaving basics for projects.</p>
+                            <a href="https://www.thesprucecrafts.com/" target="_blank" rel="noopener">Visit The Spruce Crafts</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>HarvestH2O</h3>
+                            <p>Rainwater collection: barrel setups, filters, safety diagrams, and printables for teas/water uses.</p>
+                            <a href="https://www.harvesth2o.com/" target="_blank" rel="noopener">Visit HarvestH2O</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>WWF Teaching Resources</h3>
+                            <p>Environmental education toolkits, classroom materials, and nature study activities.</p>
+                            <a href="https://www.worldwildlife.org/teaching-resources/toolkits" target="_blank" rel="noopener">Visit WWF</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Kiddle Farming</h3>
+                            <p>Kid-safe encyclopedia: farming topics, age-appropriate visuals, and hands-on learning.</p>
+                            <a href="https://kids.kiddle.co/Farming" target="_blank" rel="noopener">Visit Kiddle Farming</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Ag Foundation</h3>
+                            <p>At-home agricultural activities, food systems education, and printable hands-on guides.</p>
+                            <a href="https://www.agfoundation.org/resources" target="_blank" rel="noopener">Visit Ag Foundation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GAMES TAB -->
+                <div id="games" class="tab-content">
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h3>ABCya!</h3>
+                            <p>Educational games and activities for K-5: curriculum-aligned fun for reading, math, and more.</p>
+                            <a href="https://www.abcya.com/" target="_blank" rel="noopener">Visit ABCya</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>PBS Kids</h3>
+                            <p>Games, videos, and activities with PBS characters: educational entertainment for young learners.</p>
+                            <a href="https://pbskids.org/" target="_blank" rel="noopener">Visit PBS Kids</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Scholastic Kids</h3>
+                            <p>Reading games, activities, book recommendations, and literacy resources from Scholastic experts.</p>
+                            <a href="https://kids.scholastic.com/kid/home/" target="_blank" rel="noopener">Visit Scholastic Kids</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Funbrain</h3>
+                            <p>Math, reading, and problem-solving games for PreK-8: trusted educational play since 1997.</p>
+                            <a href="https://www.funbrain.com/" target="_blank" rel="noopener">Visit Funbrain</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>National Geographic Kids</h3>
+                            <p>Games, videos, and activities on animals, science, geography: global exploration for kids.</p>
+                            <a href="https://kids.nationalgeographic.com/" target="_blank" rel="noopener">Visit Nat Geo Kids</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Coolmath Games</h3>
+                            <p>Brain-training math games: logic puzzles, strategy, and fun challenges for all ages.</p>
+                            <a href="https://www.coolmathgames.com/" target="_blank" rel="noopener">Visit Coolmath Games</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Education.com</h3>
+                            <p>Over 38,000 worksheets, games, and activities for Pre-K to 8th grade in math, reading, science, and more.</p>
+                            <a href="https://www.education.com/" target="_blank" rel="noopener">Visit Education.com</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Teachers Pay Teachers</h3>
+                            <p>7M+ teacher-created lessons, worksheets, and resources downloaded 1B+ times for K-12 education.</p>
+                            <a href="https://www.teacherspayteachers.com/" target="_blank" rel="noopener">Visit Teachers Pay Teachers</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOOLS TAB -->
+                <div id="tools" class="tab-content">
+                    <div class="resource-grid">
+                        <div class="tool-card">
+                            <i class="fas fa-calculator"></i>
+                            <div>
+                                <h3>My Pay Stub Calculator</h3>
+                                <p>Generate professional pay stubs instantly for budgeting and verification.</p>
+                            </div>
+                            <a href="https://calculator-ea5.pages.dev/" target="_blank" rel="noopener">Use Tool</a>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <i class="fas fa-piggy-bank"></i>
+                            <div>
+                                <h3>My Budget Tracker</h3>
+                                <p>Simple, effective tool to track expenses and manage family finances.</p>
+                            </div>
+                            <a href="https://mamasaidthis.pages.dev/budget-tracker.html" target="_blank" rel="noopener">Use Tool</a>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <i class="fas fa-book-open"></i>
+                            <div>
+                                <h3>Free Grok Academy Resources</h3>
+                                <p>Introductory coding lessons and materials to get started today.</p>
+                            </div>
+                            <a href="https://groklearning.com/" target="_blank" rel="noopener">Access Resources</a>
+                        </div>
+                    </div>
+                    <div class="helper-note" style="margin-top: 40px;">
+                        <h4><i class="fas fa-plus-circle"></i> Add New Tools Easily</h4>
+                        <p>To add a new tool, copy this block and paste it inside the <code>&lt;div class="resource-grid"&gt;</code> in the Tools tab:</p>
+                        <pre style="background: var(--warm-white); padding: 15px; border-radius: 6px; overflow-x: auto; font-size: 0.85em;">
+&lt;div class="tool-card"&gt;
+    &lt;i class="fas fa-[icon]"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;h3&gt;New Tool Name&lt;/h3&gt;
+        &lt;p&gt;Brief description here.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;a href="YOUR-LINK" target="_blank" rel="noopener"&gt;Use Tool&lt;/a&gt;
+&lt;/div&gt;
+                        </pre>
+                        <p>Replace [icon] with a Font Awesome class (e.g., fa-chart-line), and update the link/description. Save and deploy—no coding required!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="waitlist-section" id="waitlist">
+        <div class="container">
+            <div class="waitlist-content">
+                <h2>Join the Waitlist</h2>
+                <p>Get updates, exclusive resources, and lottery chances for discounted Grok Academy access through Herbal HomeSchool!</p>
+                
+                <form class="waitlist-form" id="waitlistForm" action="https://submit-form.com/form_v1_DELCuNQv4BmefaZTQM83z5" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">What are you most excited about?</label>
+                        <textarea id="message" name="message" placeholder="e.g., Coding classes, herbal resources, or family support..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Join Waitlist</button>
+                </form>
+                
+                <div id="success-message">
+                    Thank you! You're on the list. Check your email for confirmation.
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2025 Herbal HomeSchool | Forged with 🔥 for unstoppable families everywhere</p>
+        <div class="container">
+            <p>&copy; 2025 Herbal HomeSchool. All rights reserved. | <a href="mailto:heather@herbalhomeschool.work.gd">Contact Heather</a> | Built with care for holistic families.</p>
+        </div>
     </footer>
+
+    <script>
+        function openTab(event, tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabContents.forEach(content => content.classList.remove('active'));
+            tabBtns.forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Form submission handler
+        document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    form.style.display = 'none';
+                    document.getElementById('success-message').style.display = 'block';
+                } else {
+                    alert('Oops! Something went wrong. Please try again.');
+                }
+            }).catch(error => {
+                alert('Network error. Please check your connection and try again.');
+            });
+        });
+    </script>
 </body>
 </html>
