@@ -1,4 +1,777 @@
-<div class="resource-card">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal HomeSchool | Verified Grok Academy Educator</title>
+    <meta name="description" content="Holistic homeschooling combining coding, nature studies, and real-world life skills. Taught by Heather H., Grok Academy Certified Educator.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --forest: #2d5016;
+            --sage: #7a9b76;
+            --cream: #faf7f2;
+            --warm-white: #ffffff;
+            --charcoal: #1a1a1a;
+            --soft-gray: #4a4a4a;
+            --gold: #d4a574;
+            --mint: #e8f5e3;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        /* HEADER - Clean, minimal, professional */
+        header {
+            background: var(--warm-white);
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.4em;
+            color: var(--forest);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo span {
+            color: var(--sage);
+            font-weight: 400;
+        }
+        
+        nav a {
+            margin-left: 40px;
+            color: var(--soft-gray);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--forest);
+        }
+        
+        /* HERO - Sophisticated, spacious */
+        .hero {
+            padding: 100px 0 120px;
+            background: linear-gradient(180deg, var(--warm-white) 0%, var(--cream) 100%);
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 3.5em;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            color: var(--charcoal);
+            font-weight: 700;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.35em;
+            line-height: 1.6;
+            color: var(--soft-gray);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .credentials-bar {
+            display: flex;
+            gap: 30px;
+            margin: 40px 0 50px;
+            flex-wrap: wrap;
+        }
+        
+        .credential-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+            color: var(--soft-gray);
+            font-weight: 500;
+            background: var(--mint);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--sage);
+        }
+        
+        .credential-badge i {
+            color: var(--forest);
+            font-size: 1.1em;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 16px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: var(--forest);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #234012;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(45,80,22,0.2);
+        }
+        
+        .btn-secondary {
+            background: var(--gold);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #c49563;
+            transform: translateY(-1px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--forest);
+            border: 2px solid var(--forest);
+        }
+        
+        .btn-outline:hover {
+            background: var(--forest);
+            color: white;
+        }
+        
+        /* ABOUT SECTION */
+        .about-section {
+            background: var(--warm-white);
+            padding: 80px 0;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .about-card {
+            padding: 30px;
+            border-left: 3px solid var(--sage);
+            background: var(--cream);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .about-card h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .about-card h3 i {
+            color: var(--forest);
+            font-size: 1.2em;
+        }
+        
+        .about-card ul {
+            list-style: none;
+            line-height: 1.9;
+            color: var(--soft-gray);
+        }
+        
+        .about-card li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            border-bottom: 1px solid rgba(122,155,118,0.1);
+            font-weight: 500;
+        }
+        
+        .about-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .about-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--forest);
+            font-weight: 700;
+            font-size: 0.8em;
+        }
+
+        .about-card .recognition-li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 0;
+        }
+
+        .about-card .recognition-li i {
+            color: var(--gold);
+            font-size: 1em;
+            min-width: 16px;
+        }
+        
+        /* RESOURCES SECTION */
+        .resources-section {
+            padding: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+        
+        .section-header h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+        
+        .section-header p {
+            font-size: 1.1em;
+            color: var(--soft-gray);
+        }
+        
+        .tabs-wrapper {
+            background: var(--warm-white);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .tab-nav {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--cream);
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            padding: 14px 28px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--soft-gray);
+            transition: all 0.3s;
+            font-size: 0.95em;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+        }
+        
+        .tab-btn:hover {
+            color: var(--forest);
+        }
+        
+        .tab-btn.active {
+            color: var(--forest);
+            border-bottom-color: var(--forest);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .resource-card {
+            padding: 28px;
+            background: var(--cream);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        
+        .resource-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            color: var(--charcoal);
+            font-weight: 600;
+        }
+        
+        .resource-card p {
+            font-size: 0.95em;
+            color: var(--soft-gray);
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        
+        .resource-card a {
+            color: var(--forest);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .resource-card a:after {
+            content: "→";
+            transition: transform 0.3s;
+        }
+        
+        .resource-card a:hover:after {
+            transform: translateX(4px);
+        }
+        
+        /* TOOLS TAB SPECIFIC */
+        .tool-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: var(--mint);
+            border-radius: 8px;
+            border: 1px solid var(--sage);
+        }
+        
+        .tool-card i {
+            font-size: 2em;
+            color: var(--forest);
+        }
+        
+        .tool-card h3 {
+            margin-bottom: 5px;
+        }
+        
+        .tool-card p {
+            margin: 0;
+            color: var(--soft-gray);
+            font-size: 0.9em;
+        }
+        
+        .tool-card a {
+            margin-left: auto;
+            background: var(--forest);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            text-decoration: none;
+        }
+        
+        .tool-card a:hover {
+            background: #234012;
+        }
+        
+        /* WAITLIST SECTION */
+        .waitlist-section {
+            background: linear-gradient(135deg, var(--forest) 0%, #1f3d0f 100%);
+            padding: 100px 0;
+            margin: 80px 0 0;
+        }
+        
+        .waitlist-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .waitlist-content h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .waitlist-content p {
+            font-size: 1.15em;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 40px;
+        }
+        
+        .waitlist-form {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--charcoal);
+            font-size: 0.9em;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid var(--cream);
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95em;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--sage);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .submit-btn {
+            background: var(--forest);
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #234012;
+        }
+        
+        #success-message {
+            display: none;
+            background: var(--mint);
+            color: var(--forest);
+            padding: 16px;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: var(--warm-white);
+            padding: 60px 0;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        
+        footer p {
+            color: var(--soft-gray);
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: var(--forest);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .helper-note {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--mint);
+            border-radius: 8px;
+            border-left: 4px solid var(--sage);
+        }
+        
+        .helper-note h4 {
+            color: var(--forest);
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        
+        .helper-note code {
+            background: rgba(0,0,0,0.05);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-family: 'Monaco', monospace;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            header {
+                padding: 20px 0;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1em;
+            }
+            
+            .credentials-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                text-align: center;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-header h2 {
+                font-size: 2em;
+            }
+            
+            .tabs-wrapper {
+                padding: 25px;
+            }
+            
+            .tab-nav {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .tab-btn {
+                text-align: left;
+                padding: 12px 0;
+                border-bottom: 1px solid var(--cream);
+            }
+            
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .waitlist-form {
+                padding: 30px 20px;
+            }
+            
+            .tool-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .tool-card a {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Herbal <span>HomeSchool</span></div>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#waitlist">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Holistic homeschooling that blends coding, nature, and life skills.</h1>
+                <p class="subtitle">Elevate your homeschool journey with expert-led programs from Heather H., a Grok Academy Certified Educator and Google-recognized innovator in healthcare informatics and holistic wellness. Unlock your child's potential through proven, transformative curricula.</p>
+                
+                <div class="credentials-bar">
+                    <div class="credential-badge"><i class="fas fa-certificate"></i>Grok Academy Certified Educator</div>
+                    <div class="credential-badge"><i class="fas fa-trophy"></i>Google Women Techmakers</div>
+                    <div class="credential-badge"><i class="fas fa-graduation-cap"></i>MS Healthcare Management & Informatics</div>
+                    <div class="credential-badge"><i class="fas fa-leaf"></i>Certified Holistic Wellness Coach</div>
+                </div>
+                
+                <div class="cta-group">
+                    <a href="#" class="btn btn-primary" onclick="alert('Stripe integration placeholder - Add your link here!')">Join Grok Academy Classes</a>
+                    <a href="https://mamasaidthis.pages.dev/" target="_blank" rel="noopener" class="btn btn-secondary">Mom Help Central</a>
+                    <a href="#waitlist" class="btn btn-outline">Join Waitlist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-graduation-cap"></i>Academic Credentials</h3>
+                    <ul>
+                        <li>Master of Science in Healthcare Management with Informatics Concentration</li>
+                        <li>Bachelor of Science in Management (Dean's List, Presidential Award)</li>
+                        <li>Associate of Applied Science in English - Navarro College</li>
+                        <li>250 + completed college credits</li>
+                        <li>Upsilon Phi Delta Honor Society Member</li>
+                    </ul>
+                </div>
+                
+                <div class="about-card">
+                    <h3><i class="fas fa-certificate"></i>Professional Certifications</h3>
+                    <ul>
+                        <li>Project Management Professional (PMP)</li>
+                        <li>HIPAA Compliance Specialist</li>
+                        <li>OSHA Compliance Certification</li>
+                        <li>Certified Nursing Assistant (CNA)</li>
+                        <li>ServSafe Food Safety Manager</li>
+                        <li>Medical Terminology I-III</li>
+                        <li>Psychology</li>
+                        <li>Introduction to Anthropology</li>
+                        <li>TESOL</li>
+                        <li>Early Childhood Education</li>
+                        <li>Holistic health and wellness advisor</li>
+                        <li>Herbalogy and astrology coach</li>
+                    </ul>
+                </div>
+                
+                <div class="about-card">
+                    <h3><i class="fas fa-award"></i>Professional Recognition</h3>
+                    <ul>
+                        <li class="recognition-li"><i class="fas fa-users"></i> Google Women Techmakers Program Alumna</li>
+                        <li class="recognition-li"><i class="fas fa-cloud"></i> Google Cloud Innovator Award Recipient</li>
+                        <li class="recognition-li"><i class="fas fa-rocket"></i> Google Early Access Developer Program</li>
+                        <li class="recognition-li"><i class="fas fa-brain"></i> Microsoft Certified: Azure AI Engineer Associate</li>
+                        <li class="recognition-li"><i class="fas fa-cogs"></i> Microsoft Certified: Power Platform Developer Associate</li>
+                        <li class="recognition-li"><i class="fas fa-robot"></i> Microsoft AI-900: AI Fundamentals</li>
+                        <li class="recognition-li"><i class="fas fa-code"></i> Microsoft Certified: AI Development & Office Suite Expert</li>
+                        <li class="recognition-li"><i class="fas fa-laptop-code"></i> Self-Taught Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resources-section" id="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Learning Resources</h2>
+                <p>Expertly vetted, free resources for holistic education in coding, nature studies, games, and practical tools. Designed for seamless integration into your homeschool curriculum.</p>
+            </div>
+            
+            <div class="tabs-wrapper">
+                <div class="tab-nav">
+                    <button class="tab-btn active" onclick="openTab(event, 'coding')">Coding & Math</button>
+                    <button class="tab-btn" onclick="openTab(event, 'nature')">Nature & Holistic</button>
+                    <button class="tab-btn" onclick="openTab(event, 'games')">Educational Games</button>
+                    <button class="tab-btn" onclick="openTab(event, 'tools')">Free Tools</button>
+                </div>
+
+                <!-- CODING TAB -->
+                <div id="coding" class="tab-content active">
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h3>Scratch (MIT)</h3>
+                            <p>Visual block-based coding for creating animations, games, and interactive stories. Ideal for young learners.</p>
+                            <a href="https://scratch.mit.edu/" target="_blank" rel="noopener">Visit Scratch</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>CodeCombat</h3>
+                            <p>Learn Python and JavaScript through epic game-based adventures. Builds real coding proficiency.</p>
+                            <a href="https://codecombat.com/" target="_blank" rel="noopener">Visit CodeCombat</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>CodeMonkey</h3>
+                            <p>Coding puzzles that teach logic and problem-solving via engaging character adventures.</p>
+                            <a href="https://www.codemonkey.com/" target="_blank" rel="noopener">Visit CodeMonkey</a>
+                        </div>
+                        
+                        <div class="resource-card">
                             <h3>Grok Academy</h3>
                             <p>Professional coding curriculum with discounted access through Heather's verified classes.</p>
                             <a href="https://groklearning.com/" target="_blank" rel="noopener">Explore Grok Academy</a>
