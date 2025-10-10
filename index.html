@@ -1,204 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heather Herbal Home | Part of the Mama Said Network</title>
-    <meta name="description" content="A holistic homeschool resource hub for families — connecting nature, learning, and wellness through trusted educational links and tools.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #faf9f6;
-            color: #333;
-            margin: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, #7cbf8a, #a3d3a2);
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            font-size: 2rem;
-            margin: 0;
-        }
-        nav {
-            background: #fff;
-            text-align: center;
-            border-bottom: 1px solid #e6e6e6;
-        }
-        nav a {
-            display: inline-block;
-            padding: 1rem;
-            color: #3b3b3b;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        nav a:hover {
-            color: #388e3c;
-        }
-        section {
-            padding: 2rem 1rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .resource-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 1.5rem;
-        }
-        .resource-card, .tool-card {
-            background: white;
-            border-radius: 14px;
-            padding: 1.2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease;
-        }
-        .resource-card:hover, .tool-card:hover {
-            transform: translateY(-5px);
-        }
-        .resource-card h3, .tool-card h3 {
-            color: #2d6a4f;
-            margin-top: 0;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .tab-btn {
-            padding: 0.8rem 1.5rem;
-            background: #fff;
-            border: 1px solid #ccc;
-            cursor: pointer;
-            font-weight: 500;
-            border-radius: 25px;
-            margin: 0.5rem;
-            transition: all 0.2s ease;
-        }
-        .tab-btn.active, .tab-btn:hover {
-            background: #2d6a4f;
-            color: white;
-        }
-        .waitlist-section {
-            background: #f4f9f4;
-            border-top: 2px solid #cde7c7;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        .waitlist-form {
-            max-width: 500px;
-            margin: 1rem auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .form-group {
-            text-align: left;
-        }
-        label {
-            display: block;
-            margin-bottom: 0.3rem;
-            font-weight: 600;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-        }
-        .submit-btn {
-            background: #2d6a4f;
-            color: white;
-            padding: 0.8rem;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: 0.2s ease;
-        }
-        .submit-btn:hover {
-            background: #388e3c;
-        }
-        #success-message {
-            display: none;
-            background: #d4edda;
-            color: #155724;
-            padding: 1rem;
-            margin-top: 1rem;
-            border-radius: 6px;
-        }
-        footer {
-            background: #2d6a4f;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: underline;
-        }
-        footer small {
-            display: block;
-            margin-top: 0.5rem;
-            opacity: 0.8;
-        }
-        .about-section {
-            background: #f8fff8;
-            padding: 2rem 1rem;
-            border-top: 1px solid #e2f0e2;
-            text-align: center;
-        }
-        .about-section h2 {
-            color: #2d6a4f;
-        }
-        .cta {
-            background: #2d6a4f;
-            color: white;
-            padding: 1rem 2rem;
-            display: inline-block;
-            border-radius: 8px;
-            margin-top: 1rem;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .cta:hover {
-            background: #388e3c;
-        }
-    </style>
-</head>
+<div class="resource-card">
+                            <h3>Grok Academy</h3>
+                            <p>Professional coding curriculum with discounted access through Heather's verified classes.</p>
+                            <a href="https://groklearning.com/" target="_blank" rel="noopener">Explore Grok Academy</a>
+                        </div>
+                    </div>
+                </div>
 
-<body>
-    <header>
-        <h1>Heather Herbal Home</h1>
-        <p>Holistic Learning, Family Connection, and Nature-Based Education</p>
-        <small>Part of the <a href="https://mamasaidthis.pages.dev" style="color:#fff; text-decoration:underline;">Mama Said Network</a></small>
-    </header>
+                <!-- NATURE TAB -->
+                <div id="nature" class="tab-content">
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h3>Mother Earth News</h3>
+                            <p>All-in-one archive for homesteading: herbal recipes (willow bark tea, fire cider, elderberry syrup), survival crafts, printables, and kid activities.</p>
+                            <a href="https://www.motherearthnews.com/" target="_blank" rel="noopener">Visit Mother Earth News</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>LearningHerbs</h3>
+                            <p>Herbal-focused free PDFs/recipes for teas, syrups/tinctures, flashcards, and kid games (Wildcraft! printouts).</p>
+                            <a href="https://www.learningherbs.com/" target="_blank" rel="noopener">Visit LearningHerbs</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Homestead Honey</h3>
+                            <p>Kid-centric activities: foraging, elderberry syrup, salve-making, with 30+ free projects and printables.</p>
+                            <a href="https://homestead-honey.com/" target="_blank" rel="noopener">Visit Homestead Honey</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Intentional Homesteading</h3>
+                            <p>100+ practical skills list: herbal remedies, survival, crafts with downloadable PDF worksheets.</p>
+                            <a href="https://www.intentionalhomesteading.com/" target="_blank" rel="noopener">Visit Intentional Homesteading</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>The Survival Mom</h3>
+                            <p>Family preparedness: herbal first aid, rainwater collection, survival bingo, and scenario worksheets.</p>
+                            <a href="https://thesurvivalmom.com/" target="_blank" rel="noopener">Visit The Survival Mom</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Incredible Edible Landscapes</h3>
+                            <p>Homesteading guide: herbal garden plans, rainwater setups, syrup recipes, and project trackers.</p>
+                            <a href="https://incredibleediblelandscapes.com/" target="_blank" rel="noopener">Visit Incredible Edible</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Mountain Rose Herbs</h3>
+                            <p>Guides/recipes: willow bark tea, tincture basics, foraging tips, dosage charts, and plant ID sheets.</p>
+                            <a href="https://mountainroseherbs.com/" target="_blank" rel="noopener">Visit Mountain Rose Herbs</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>The Pioneer Woman</h3>
+                            <p>Print-friendly recipes: fire cider, herbal soaps, rain barrel DIYs, recipe journals, and kitchen challenges.</p>
+                            <a href="https://www.thepioneerwoman.com/" target="_blank" rel="noopener">Visit The Pioneer Woman</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Wellness Mama</h3>
+                            <p>Elderberry syrup recipe, herbal teas, remedy planners, foraging checklists, and storage tips.</p>
+                            <a href="https://wellnessmama.com/" target="_blank" rel="noopener">Visit Wellness Mama</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Primal Survivor</h3>
+                            <p>Illustrated guides: friction fire, bow drill worksheets, herbal wildcrafting, and nature hunts.</p>
+                            <a href="https://www.primalsurvivor.net/" target="_blank" rel="noopener">Visit Primal Survivor</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>The Spruce Crafts</h3>
+                            <p>DIY herbal soap (lavender infusions), printable templates, fencing/weaving basics for projects.</p>
+                            <a href="https://www.thesprucecrafts.com/" target="_blank" rel="noopener">Visit The Spruce Crafts</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>HarvestH2O</h3>
+                            <p>Rainwater collection: barrel setups, filters, safety diagrams, and printables for teas/water uses.</p>
+                            <a href="https://www.harvesth2o.com/" target="_blank" rel="noopener">Visit HarvestH2O</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>WWF Teaching Resources</h3>
+                            <p>Environmental education toolkits, classroom materials, and nature study activities.</p>
+                            <a href="https://www.worldwildlife.org/teaching-resources/toolkits" target="_blank" rel="noopener">Visit WWF</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Kiddle Farming</h3>
+                            <p>Kid-safe encyclopedia: farming topics, age-appropriate visuals, and hands-on learning.</p>
+                            <a href="https://kids.kiddle.co/Farming" target="_blank" rel="noopener">Visit Kiddle Farming</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Ag Foundation</h3>
+                            <p>At-home agricultural activities, food systems education, and printable hands-on guides.</p>
+                            <a href="https://www.agfoundation.org/resources" target="_blank" rel="noopener">Visit Ag Foundation</a>
+                        </div>
+                    </div>
+                </div>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#nature">Nature</a>
-        <a href="#games">Games</a>
-        <a href="#tools">Tools</a>
-        <a href="#waitlist">Join Waitlist</a>
-    </nav>
+                <!-- GAMES TAB -->
+                <div id="games" class="tab-content">
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h3>ABCya!</h3>
+                            <p>Educational games and activities for K-5: curriculum-aligned fun for reading, math, and more.</p>
+                            <a href="https://www.abcya.com/" target="_blank" rel="noopener">Visit ABCya</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>PBS Kids</h3>
+                            <p>Games, videos, and activities with PBS characters: educational entertainment for young learners.</p>
+                            <a href="https://pbskids.org/" target="_blank" rel="noopener">Visit PBS Kids</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Scholastic Kids</h3>
+                            <p>Reading games, activities, book recommendations, and literacy resources from Scholastic experts.</p>
+                            <a href="https://kids.scholastic.com/kid/home/" target="_blank" rel="noopener">Visit Scholastic Kids</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Funbrain</h3>
+                            <p>Math, reading, and problem-solving games for PreK-8: trusted educational play since 1997.</p>
+                            <a href="https://www.funbrain.com/" target="_blank" rel="noopener">Visit Funbrain</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>National Geographic Kids</h3>
+                            <p>Games, videos, and activities on animals, science, geography: global exploration for kids.</p>
+                            <a href="https://kids.nationalgeographic.com/" target="_blank" rel="noopener">Visit Nat Geo Kids</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Coolmath Games</h3>
+                            <p>Brain-training math games: logic puzzles, strategy, and fun challenges for all ages.</p>
+                            <a href="https://www.coolmathgames.com/" target="_blank" rel="noopener">Visit Coolmath Games</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Education.com</h3>
+                            <p>Over 38,000 worksheets, games, and activities for Pre-K to 8th grade in math, reading, science, and more.</p>
+                            <a href="https://www.education.com/" target="_blank" rel="noopener">Visit Education.com</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Teachers Pay Teachers</h3>
+                            <p>7M+ teacher-created lessons, worksheets, and resources downloaded 1B+ times for K-12 education.</p>
+                            <a href="https://www.teacherspayteachers.com/" target="_blank" rel="noopener">Visit Teachers Pay Teachers</a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about-section">
-        <h2>Welcome to Heather Herbal Home 🌿</h2>
-        <p>Created by Heather Hilliard, this hub curates trusted, family-friendly resources for holistic education. Whether you’re exploring herbalism, homeschooling, or sustainable living, this space connects families with nature and knowledge.</p>
-        <a href="https://mamasaidthis.pages.dev" class="cta">Visit Mama Said This →</a>
+                <!-- TOOLS TAB -->
+                <div id="tools" class="tab-content">
+                    <div class="resource-grid">
+                        <div class="tool-card">
+                            <i class="fas fa-calculator"></i>
+                            <div>
+                                <h3>My Pay Stub Calculator</h3>
+                                <p>Generate professional pay stubs instantly for budgeting and verification.</p>
+                            </div>
+                            <a href="https://calculator-ea5.pages.dev/" target="_blank" rel="noopener">Use Tool</a>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <i class="fas fa-piggy-bank"></i>
+                            <div>
+                                <h3>My Budget Tracker</h3>
+                                <p>Simple, effective tool to track expenses and manage family finances.</p>
+                            </div>
+                            <a href="https://mamasaidthis.pages.dev/budget-tracker.html" target="_blank" rel="noopener">Use Tool</a>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <i class="fas fa-book-open"></i>
+                            <div>
+                                <h3>Free Grok Academy Resources</h3>
+                                <p>Introductory coding lessons and materials to get started today.</p>
+                            </div>
+                            <a href="https://groklearning.com/" target="_blank" rel="noopener">Access Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- EXISTING CONTENT STARTS HERE -->
-    <!-- (Keep your current tab content and cards unchanged) -->
-    <!-- Paste your Nature, Games, and Tools sections here exactly as you shared -->
-    
-    <!-- WAITLIST SECTION -->
     <section class="waitlist-section" id="waitlist">
         <div class="container">
             <div class="waitlist-content">
@@ -233,9 +223,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Heather Herbal Home | Part of the Mama Said Network</p>
-            <a href="mailto:heather@herbalhomeschool.work.gd">Contact Heather</a>
-            <small>Built with care for holistic families 🌸</small>
+            <p>&copy; 2025 Herbal HomeSchool. All rights reserved. | <a href="mailto:heather@herbalhomeschool.work.gd">Contact Heather</a> | Built with care for holistic families.</p>
         </div>
     </footer>
 
@@ -251,6 +239,7 @@
             event.target.classList.add('active');
         }
 
+        // Form submission handler
         document.getElementById('waitlistForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const form = this;
@@ -266,7 +255,7 @@
                 } else {
                     alert('Oops! Something went wrong. Please try again.');
                 }
-            }).catch(() => {
+            }).catch(error => {
                 alert('Network error. Please check your connection and try again.');
             });
         });
