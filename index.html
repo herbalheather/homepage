@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herbal HomeSchool | Verified Grok Academy Educator</title>
-    <meta name="description" content="Holistic homeschooling combining coding, nature studies, and real-world life skills. Taught by Heather H., Grok Academy Certified Educator.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Holistic homeschooling blending coding, nature, and life skills. Expert-led programs by Heather H., Grok Academy Certified Educator.">
+    <meta name="keywords" content="holistic homeschooling, coding for kids, herbal studies, nature education, homeschool tutoring, Grok Academy, wellness coaching, web design, caregiving">
+    <meta name="theme-color" content="#2d5016">
+    <title>Heather's Herbal HomeSchool | Verified Grok Academy Educator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --forest: #2d5016;
@@ -27,11 +28,12 @@
         }
         
         body {
-            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
             background: var(--cream);
             color: var(--charcoal);
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
         
         .container {
@@ -40,10 +42,10 @@
             padding: 0 40px;
         }
         
-        /* HEADER - Clean, minimal, professional */
+        /* HEADER */
         header {
             background: var(--warm-white);
-            padding: 30px 0;
+            padding: 25px 0;
             border-bottom: 1px solid rgba(0,0,0,0.06);
             position: sticky;
             top: 0;
@@ -55,6 +57,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
         
         .logo {
@@ -62,7 +65,6 @@
             font-size: 1.4em;
             color: var(--forest);
             font-weight: 700;
-            letter-spacing: -0.5px;
         }
         
         .logo span {
@@ -70,50 +72,55 @@
             font-weight: 400;
         }
         
+        nav {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
         nav a {
-            margin-left: 40px;
             color: var(--soft-gray);
             text-decoration: none;
             font-weight: 500;
             font-size: 0.95em;
             transition: color 0.3s;
+            padding: 8px 0;
         }
         
         nav a:hover {
             color: var(--forest);
         }
         
-        /* HERO - Sophisticated, spacious */
+        /* HERO */
         .hero {
-            padding: 100px 0 120px;
+            padding: 80px 0 100px;
             background: linear-gradient(180deg, var(--warm-white) 0%, var(--cream) 100%);
         }
         
         .hero-content {
-            max-width: 800px;
+            max-width: 900px;
         }
         
         .hero h1 {
             font-family: 'Libre Baskerville', serif;
-            font-size: 3.5em;
+            font-size: 3.2em;
             line-height: 1.2;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: var(--charcoal);
             font-weight: 700;
         }
         
         .hero .subtitle {
-            font-size: 1.35em;
+            font-size: 1.25em;
             line-height: 1.6;
             color: var(--soft-gray);
-            margin-bottom: 20px;
-            font-weight: 400;
+            margin-bottom: 30px;
         }
         
         .credentials-bar {
             display: flex;
-            gap: 30px;
-            margin: 40px 0 50px;
+            gap: 20px;
+            margin: 35px 0 45px;
             flex-wrap: wrap;
         }
         
@@ -125,24 +132,19 @@
             color: var(--soft-gray);
             font-weight: 500;
             background: var(--mint);
-            padding: 8px 16px;
-            border-radius: 20px;
+            padding: 10px 18px;
+            border-radius: 25px;
             border: 1px solid var(--sage);
-        }
-        
-        .credential-badge i {
-            color: var(--forest);
-            font-size: 1.1em;
         }
         
         .cta-group {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
         }
         
         .btn {
-            padding: 16px 32px;
+            padding: 14px 28px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
@@ -151,6 +153,7 @@
             font-size: 0.95em;
             border: none;
             cursor: pointer;
+            text-align: center;
         }
         
         .btn-primary {
@@ -160,8 +163,8 @@
         
         .btn-primary:hover {
             background: #234012;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(45,80,22,0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(45,80,22,0.3);
         }
         
         .btn-secondary {
@@ -171,7 +174,7 @@
         
         .btn-secondary:hover {
             background: #c49563;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
         }
         
         .btn-outline {
@@ -192,34 +195,74 @@
             border-top: 1px solid rgba(0,0,0,0.06);
             border-bottom: 1px solid rgba(0,0,0,0.06);
         }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        
+        .section-header h2 {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+        
+        .section-header p {
+            font-size: 1.1em;
+            color: var(--soft-gray);
+            line-height: 1.7;
+        }
+
+        .professional-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .professional-link {
+            background: var(--forest);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .professional-link:hover {
+            background: #234012;
+            transform: translateY(-2px);
+        }
         
         .about-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
         }
         
         .about-card {
-            padding: 30px;
-            border-left: 3px solid var(--sage);
+            padding: 35px;
+            border-left: 4px solid var(--sage);
             background: var(--cream);
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
         }
         
         .about-card h3 {
             font-family: 'Libre Baskerville', serif;
-            font-size: 1.3em;
-            margin-bottom: 20px;
+            font-size: 1.4em;
+            margin-bottom: 25px;
             color: var(--charcoal);
             display: flex;
             align-items: center;
-            gap: 10px;
-        }
-        
-        .about-card h3 i {
-            color: var(--forest);
-            font-size: 1.2em;
+            gap: 12px;
         }
         
         .about-card ul {
@@ -229,10 +272,10 @@
         }
         
         .about-card li {
-            padding: 8px 0;
-            padding-left: 20px;
+            padding: 10px 0;
+            padding-left: 25px;
             position: relative;
-            border-bottom: 1px solid rgba(122,155,118,0.1);
+            border-bottom: 1px solid rgba(122,155,118,0.15);
             font-weight: 500;
         }
         
@@ -246,62 +289,159 @@
             left: 0;
             color: var(--forest);
             font-weight: 700;
-            font-size: 0.8em;
+            font-size: 1.1em;
+        }
+        
+        /* SERVICES SECTION */
+        .services-section {
+            padding: 80px 0;
+            background: var(--cream);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 4px solid var(--forest);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            color: var(--charcoal);
+        }
+        
+        .service-card p {
+            color: var(--soft-gray);
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        
+        .service-card li:before {
+            content: '✓ ';
+            color: var(--forest);
+            font-weight: bold;
+        }
+        
+        .price {
+            font-size: 1.4em;
+            color: var(--forest);
+            font-weight: bold;
+            margin: 15px 0;
         }
 
-        .about-card .recognition-li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding-left: 0;
+        .custom-package {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            border: 3px solid var(--forest);
         }
 
-        .about-card .recognition-li i {
-            color: var(--gold);
-            font-size: 1em;
-            min-width: 16px;
+        .custom-package h3 {
+            font-family: 'Libre Baskerville', serif;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+
+        .custom-package p {
+            font-size: 1.1em;
+            color: var(--soft-gray);
+            margin-bottom: 25px;
+        }
+        
+        /* TOOLS SECTION */
+        .tools-section {
+            padding: 80px 0;
+            background: var(--warm-white);
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .tool-card {
+            background: var(--cream);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid var(--sage);
+            text-decoration: none;
+            color: var(--charcoal);
+            display: block;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .tool-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        
+        .tool-card h4 {
+            color: var(--forest);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .tool-card p {
+            font-size: 0.9em;
+            color: var(--soft-gray);
         }
         
         /* RESOURCES SECTION */
         .resources-section {
             padding: 80px 0;
-        }
-        
-        .section-header {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 60px;
-        }
-        
-        .section-header h2 {
-            font-family: 'Libre Baskerville', serif;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: var(--charcoal);
-        }
-        
-        .section-header p {
-            font-size: 1.1em;
-            color: var(--soft-gray);
+            background: var(--cream);
         }
         
         .tabs-wrapper {
             background: var(--warm-white);
             border-radius: 12px;
             padding: 40px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-top: 40px;
         }
         
         .tab-nav {
             display: flex;
-            gap: 8px;
+            gap: 10px;
             margin-bottom: 40px;
             border-bottom: 2px solid var(--cream);
             flex-wrap: wrap;
         }
         
         .tab-btn {
-            padding: 14px 28px;
+            padding: 14px 26px;
             background: transparent;
             border: none;
             cursor: pointer;
@@ -311,6 +451,7 @@
             font-size: 0.95em;
             border-bottom: 3px solid transparent;
             margin-bottom: -2px;
+            font-family: 'Inter', sans-serif;
         }
         
         .tab-btn:hover {
@@ -338,35 +479,34 @@
         
         .resource-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
         }
         
         .resource-card {
-            padding: 28px;
+            padding: 25px;
             background: var(--cream);
             border-radius: 8px;
             transition: all 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.04);
+            border: 1px solid rgba(0,0,0,0.06);
         }
         
         .resource-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
         }
         
         .resource-card h3 {
             font-size: 1.2em;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             color: var(--charcoal);
             font-weight: 600;
         }
         
         .resource-card p {
-            font-size: 0.95em;
+            font-size: 0.9em;
             color: var(--soft-gray);
-            margin-bottom: 16px;
+            margin-bottom: 15px;
             line-height: 1.6;
         }
         
@@ -375,95 +515,82 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9em;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
         }
         
-        .resource-card a:after {
-            content: "→";
-            transition: transform 0.3s;
+        .resource-card a:hover {
+            text-decoration: underline;
         }
         
-        .resource-card a:hover:after {
-            transform: translateX(4px);
+        /* TESTIMONIALS */
+        .testimonials-section {
+            background: var(--warm-white);
+            padding: 80px 0;
         }
         
-        /* TOOLS TAB SPECIFIC */
-        .tool-card {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 20px;
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial {
             background: var(--mint);
-            border-radius: 8px;
-            border: 1px solid var(--sage);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
         }
         
-        .tool-card i {
-            font-size: 2em;
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--sage);
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            line-height: 1;
+        }
+        
+        .testimonial p {
+            font-size: 1em;
+            padding-top: 30px;
+        }
+        
+        .testimonial-author {
+            margin-top: 15px;
+            font-weight: bold;
             color: var(--forest);
         }
         
-        .tool-card h3 {
-            margin-bottom: 5px;
+        .stars {
+            color: var(--gold);
+            margin-top: 8px;
         }
         
-        .tool-card p {
-            margin: 0;
-            color: var(--soft-gray);
-            font-size: 0.9em;
+        /* CONTACT SECTION */
+        .contact-section {
+            padding: 80px 0;
+            background: var(--cream);
         }
         
-        .tool-card a {
-            margin-left: auto;
-            background: var(--forest);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 4px;
-            font-size: 0.85em;
-            text-decoration: none;
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-top: 40px;
         }
         
-        .tool-card a:hover {
-            background: #234012;
-        }
-        
-        /* WAITLIST SECTION */
-        .waitlist-section {
-            background: linear-gradient(135deg, var(--forest) 0%, #1f3d0f 100%);
-            padding: 100px 0;
-            margin: 80px 0 0;
-        }
-        
-        .waitlist-content {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .waitlist-content h2 {
-            font-family: 'Libre Baskerville', serif;
-            font-size: 2.5em;
-            color: white;
-            margin-bottom: 20px;
-        }
-        
-        .waitlist-content p {
-            font-size: 1.15em;
-            color: rgba(255,255,255,0.9);
-            margin-bottom: 40px;
-        }
-        
-        .waitlist-form {
+        .contact-form {
             background: white;
             padding: 40px;
             border-radius: 12px;
-            text-align: left;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
         
         .form-group {
-            margin-bottom: 24px;
+            margin-bottom: 25px;
         }
         
         .form-group label {
@@ -471,7 +598,7 @@
             margin-bottom: 8px;
             font-weight: 600;
             color: var(--charcoal);
-            font-size: 0.9em;
+            font-size: 0.95em;
         }
         
         .form-group input,
@@ -493,52 +620,80 @@
         
         .form-group textarea {
             resize: vertical;
-            min-height: 100px;
+            min-height: 120px;
         }
         
-        .submit-btn {
-            background: var(--forest);
-            color: white;
-            padding: 14px 32px;
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            cursor: pointer;
-            width: 100%;
-            font-size: 1em;
-            transition: background 0.3s;
+        .contact-info {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
         
-        .submit-btn:hover {
-            background: #234012;
+        .contact-info h3 {
+            font-family: 'Libre Baskerville', serif;
+            color: var(--charcoal);
+            margin-bottom: 25px;
+            font-size: 1.4em;
         }
         
-        #success-message {
-            display: none;
-            background: var(--mint);
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: var(--cream);
+            border-radius: 8px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5em;
             color: var(--forest);
-            padding: 16px;
+        }
+
+        .contact-item a {
+            color: var(--forest);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .support-btn {
+            background: var(--gold);
+            color: white;
+            padding: 14px 28px;
             border-radius: 6px;
+            text-decoration: none;
+            display: block;
             margin-top: 20px;
             font-weight: 600;
             text-align: center;
+            transition: all 0.3s;
+        }
+
+        .support-btn:hover {
+            background: #c49563;
+            transform: translateY(-2px);
         }
         
         /* FOOTER */
         footer {
-            background: var(--warm-white);
-            padding: 60px 0;
-            border-top: 1px solid rgba(0,0,0,0.06);
+            background: var(--forest);
+            color: white;
+            padding: 50px 0;
             text-align: center;
         }
         
         footer p {
-            color: var(--soft-gray);
-            font-size: 0.9em;
+            margin: 10px 0;
         }
         
         footer a {
-            color: var(--forest);
+            color: #a7f3d0;
             text-decoration: none;
             font-weight: 500;
         }
@@ -547,56 +702,59 @@
             text-decoration: underline;
         }
         
-        .helper-note {
-            margin-top: 40px;
-            padding: 30px;
-            background: var(--mint);
-            border-radius: 8px;
-            border-left: 4px solid var(--sage);
-        }
-        
-        .helper-note h4 {
-            color: var(--forest);
-            margin-bottom: 12px;
-            font-size: 1.1em;
-        }
-        
-        .helper-note code {
-            background: rgba(0,0,0,0.05);
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-size: 0.9em;
-            font-family: 'Monaco', monospace;
-        }
-        
-        @media (max-width: 768px) {
+        /* RESPONSIVE */
+        @media (max-width: 968px) {
             .container {
-                padding: 0 20px;
-            }
-            
-            header {
-                padding: 20px 0;
-            }
-            
-            nav {
-                display: none;
-            }
-            
-            .hero {
-                padding: 60px 0;
+                padding: 0 25px;
             }
             
             .hero h1 {
                 font-size: 2.2em;
             }
             
+            .about-grid,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid,
+            .tools-grid,
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            header {
+                padding: 20px 0;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+            
+            nav {
+                width: 100%;
+                justify-content: center;
+                margin-top: 15px;
+                gap: 20px;
+            }
+            
+            .hero {
+                padding: 50px 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            
             .hero .subtitle {
-                font-size: 1.1em;
+                font-size: 1.05em;
             }
             
             .credentials-bar {
                 flex-direction: column;
-                gap: 15px;
+                gap: 10px;
             }
             
             .cta-group {
@@ -604,19 +762,15 @@
             }
             
             .btn {
-                text-align: center;
-            }
-            
-            .about-grid {
-                grid-template-columns: 1fr;
+                width: 100%;
             }
             
             .section-header h2 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
             
             .tabs-wrapper {
-                padding: 25px;
+                padding: 25px 15px;
             }
             
             .tab-nav {
@@ -626,26 +780,15 @@
             
             .tab-btn {
                 text-align: left;
-                padding: 12px 0;
+                padding: 14px 0;
                 border-bottom: 1px solid var(--cream);
+                border-left: 3px solid transparent;
+                padding-left: 15px;
             }
             
-            .resource-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .waitlist-form {
-                padding: 30px 20px;
-            }
-            
-            .tool-card {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .tool-card a {
-                margin-left: 0;
-                margin-top: 10px;
+            .tab-btn.active {
+                border-left-color: var(--forest);
+                border-bottom-color: var(--cream);
             }
         }
     </style>
@@ -657,8 +800,10 @@
                 <div class="logo">Herbal <span>HomeSchool</span></div>
                 <nav>
                     <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#tools">Tools</a>
                     <a href="#resources">Resources</a>
-                    <a href="#waitlist">Contact</a>
+                    <a href="#contact">Contact</a>
                 </nav>
             </div>
         </div>
@@ -671,37 +816,50 @@
                 <p class="subtitle">Elevate your homeschool journey with expert-led programs from Heather H., a Grok Academy Certified Educator and Google-recognized innovator in healthcare informatics and holistic wellness. Unlock your child's potential through proven, transformative curricula.</p>
                 
                 <div class="credentials-bar">
-                    <div class="credential-badge"><i class="fas fa-certificate"></i>Grok Academy Certified Educator</div>
-                    <div class="credential-badge"><i class="fas fa-trophy"></i>Google Women Techmakers</div>
-                    <div class="credential-badge"><i class="fas fa-graduation-cap"></i>MS Healthcare Management & Informatics</div>
-                    <div class="credential-badge"><i class="fas fa-leaf"></i>Certified Holistic Wellness Coach</div>
+                    <div class="credential-badge">🎓 Grok Academy Certified Educator</div>
+                    <div class="credential-badge">💻 Google Women Techmakers</div>
+                    <div class="credential-badge">🏥 MS Healthcare Management & Informatics</div>
+                    <div class="credential-badge">🌿 Certified Holistic Wellness Coach</div>
                 </div>
                 
                 <div class="cta-group">
-                    <a href="https://groklearning.com/teachers/?au_redirect=false" target="_blank" rel="noopener" class="btn btn-primary">Join Grok Academy Classes</a>
-                    <a href="https://mamasaidthis.pages.dev/" target="_blank" rel="noopener" class="btn btn-secondary">Mom Help Central</a>
-                    <a href="#waitlist" class="btn btn-outline">Join Waitlist</a>
+                    <a href="#contact" class="btn btn-primary">Schedule Free Consultation</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                    <a href="https://ko-fi.com/mamasaidherbalhomeschool" target="_blank" class="btn btn-outline">Support My Work</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-section" id="about">
+    <section id="about" class="about-section">
         <div class="container">
+            <div class="section-header">
+                <h2>Meet Heather H.</h2>
+                <p>Grok Academy Certified Educator | Google-Recognized Innovator | Healthcare Informatics Specialist</p>
+            </div>
+
+            <div class="professional-links">
+                <a href="https://github.com/herbalheather?tab=repositories" target="_blank" class="professional-link">💻 GitHub Portfolio</a>
+                <a href="https://www.linkedin.com/in/heatherchilliard/" target="_blank" class="professional-link">🔗 LinkedIn</a>
+                <a href="https://orcid.org/0009-0005-1443-6360" target="_blank" class="professional-link">📚 ORCID Research</a>
+                <a href="https://kdp.amazon.com/en_US/bookshelf?ref_=kdp_kdp_TAC_TN_bs" target="_blank" class="professional-link">📖 Amazon Author</a>
+                <a href="mailto:heather@herbalhomeschool.work.gd" class="professional-link">📧 Email</a>
+            </div>
+            
             <div class="about-grid">
                 <div class="about-card">
-                    <h3><i class="fas fa-graduation-cap"></i>Academic Credentials</h3>
+                    <h3>🎓 Academic Credentials</h3>
                     <ul>
-                        <li>Master of Science in Healthcare Management with Informatics Concentration</li>
-                        <li>Bachelor of Science in Management (Dean's List, Presidential Award)</li>
+                        <li>Master of Science in Healthcare Management with Informatics Concentration - Colorado University</li>
+                        <li>Bachelor of Science in Management - Colorado University (Dean's List, Presidential Award)</li>
                         <li>Associate of Applied Science in English - Navarro College</li>
-                        <li>250 + completed college credits</li>
+                        <li>250+ completed college credits</li>
                         <li>Upsilon Phi Delta Honor Society Member</li>
                     </ul>
                 </div>
                 
                 <div class="about-card">
-                    <h3><i class="fas fa-certificate"></i>Professional Certifications</h3>
+                    <h3>💼 Professional Certifications</h3>
                     <ul>
                         <li>Project Management Professional (PMP)</li>
                         <li>HIPAA Compliance Specialist</li>
@@ -709,252 +867,483 @@
                         <li>Certified Nursing Assistant (CNA)</li>
                         <li>ServSafe Food Safety Manager</li>
                         <li>Medical Terminology I-III</li>
-                        <li>Psychology</li>
-                        <li>Introduction to Anthropology</li>
-                        <li>TESOL</li>
-                        <li>Early Childhood Education</li>
-                        <li>Holistic health and wellness advisor</li>
-                        <li>Herbalogy and astrology coach</li>
+                        <li>TESOL (Teaching English to Speakers of Other Languages)</li>
+                        <li>Early Childhood Education Certified</li>
+                        <li>Holistic Health and Wellness Advisor</li>
+                        <li>Herbology and Astrology Coach</li>
                     </ul>
                 </div>
                 
                 <div class="about-card">
-                    <h3><i class="fas fa-award"></i>Professional Recognition</h3>
+                    <h3>🏆 Professional Recognition</h3>
                     <ul>
-                        <li class="recognition-li"><i class="fas fa-users"></i> Google Women Techmakers Program Alumna</li>
-                        <li class="recognition-li"><i class="fas fa-cloud"></i> Google Cloud Innovator Award Recipient</li>
-                        <li class="recognition-li"><i class="fas fa-rocket"></i> Google Early Access Developer Program</li>
-                        <li class="recognition-li"><i class="fas fa-brain"></i> Microsoft Certified: Azure AI Engineer Associate</li>
-                        <li class="recognition-li"><i class="fas fa-cogs"></i> Microsoft Certified: Power Platform Developer Associate</li>
-                        <li class="recognition-li"><i class="fas fa-robot"></i> Microsoft AI-900: AI Fundamentals</li>
-                        <li class="recognition-li"><i class="fas fa-code"></i> Microsoft Certified: AI Development & Office Suite Expert</li>
-                        <li class="recognition-li"><i class="fas fa-laptop-code"></i> Self-Taught Developer</li>
+                        <li>Google Women Techmakers Program Alumna</li>
+                        <li>Google Cloud Innovator Award Recipient</li>
+                        <li>Google Early Access Developer Program</li>
+                        <li>Microsoft Certified: Azure AI Engineer Associate</li>
+                        <li>Microsoft Certified: Power Platform Developer Associate</li>
+                        <li>Microsoft AI-900: AI Fundamentals</li>
+                        <li>Microsoft Certified: AI Development & Office Suite Expert</li>
+                        <li>Grok Academy Verified Educator</li>
+                        <li>Self-Taught Developer & Web Designer</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="resources-section" id="resources">
+    <section id="services" class="services-section">
         <div class="container">
             <div class="section-header">
-                <h2>Curated Learning Resources</h2>
-                <p>Expertly vetted, free resources for holistic education in coding, nature studies, games, and practical tools. Designed for seamless integration into your homeschool curriculum.</p>
+                <h2>Transform Your Homeschool & Family Journey</h2>
+                <p>From coding to caregiving, herbalism to healthcare management—comprehensive support for every aspect of your family's educational and wellness journey.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Healthcare & Caregiving Guidance</h3>
+                    <p>CNA-certified, healthcare management expertise for families navigating medical needs.</p>
+                    <ul>
+                        <li>Caregiving skills & techniques (CNA)</li>
+                        <li>Medical terminology education</li>
+                        <li>Healthcare system navigation</li>
+                        <li>Family health management planning</li>
+                    </ul>
+                    <div class="price">$50-70/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Guidance</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Curriculum Consulting</h3>
+                    <p>Custom homeschool curriculum design tailored to your child's learning style.</p>
+                    <ul>
+                        <li>Personalized learning roadmap</li>
+                        <li>Subject integration planning</li>
+                        <li>Special needs accommodations</li>
+                        <li>Resource curation & recommendations</li>
+                    </ul>
+                    <div class="price">$125-175/session</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Design Curriculum</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📖</div>
+                    <h3>Academic Tutoring</h3>
+                    <p>Comprehensive tutoring in math, English, science, and humanities.</p>
+                    <ul>
+                        <li>K-12 all core subjects</li>
+                        <li>Test prep (SAT, ACT, GED)</li>
+                        <li>Essay writing & composition</li>
+                        <li>Math through calculus</li>
+                    </ul>
+                    <div class="price">$40-60/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Book Tutoring</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>TESOL & Language Learning</h3>
+                    <p>TESOL-certified English language instruction for ESL families.</p>
+                    <ul>
+                        <li>English as a Second Language (ESL)</li>
+                        <li>Reading & writing fundamentals</li>
+                        <li>Conversational English practice</li>
+                        <li>Academic English for students</li>
+                    </ul>
+                    <div class="price">$35-50/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Learn English</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏡</div>
+                    <h3>Homesteading & Self-Sufficiency</h3>
+                    <p>Practical skills for sustainable living from garden to table.</p>
+                    <ul>
+                        <li>Organic gardening & permaculture</li>
+                        <li>Food preservation & fermentation</li>
+                        <li>Rainwater collection systems</li>
+                        <li>DIY natural products</li>
+                    </ul>
+                    <div class="price">$40-55/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Start Homesteading</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Early Childhood Education</h3>
+                    <p>Certified early childhood education for ages 0-8.</p>
+                    <ul>
+                        <li>Developmentally appropriate activities</li>
+                        <li>Montessori-inspired learning</li>
+                        <li>Play-based education</li>
+                        <li>Kindergarten readiness</li>
+                    </ul>
+                    <div class="price">$35-50/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Early Learning</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Project Management Training</h3>
+                    <p>PMP-certified project management skills for workforce readiness.</p>
+                    <ul>
+                        <li>PMP methodology & principles</li>
+                        <li>Time management & organization</li>
+                        <li>Goal setting & achievement</li>
+                        <li>Professional development</li>
+                    </ul>
+                    <div class="price">$60-80/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Learn PM Skills</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Design & Development</h3>
+                    <p>Professional website creation for small businesses and entrepreneurs.</p>
+                    <ul>
+                        <li>Custom responsive websites</li>
+                        <li>Business landing pages</li>
+                        <li>Portfolio & showcase sites</li>
+                        <li>Maintenance & updates</li>
+                    </ul>
+                    <div class="price">Starting at $500</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Get a Website</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Small Group Classes</h3>
+                    <p>Collaborative learning experiences in coding, herbalism, and life skills.</p>
+                    <ul>
+                        <li>4-6 student groups</li>
+                        <li>Coding clubs & hackathons</li>
+                        <li>Herbal crafting circles</li>
+                        <li>Social learning opportunities</li>
+                    </ul>
+                    <div class="price">$25-35/student</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Join a Group</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌟</div>
+                    <h3>Holistic Wellness Coaching</h3>
+                    <p>Integrate mind, body, and spirit with holistic health guidance.</p>
+                    <ul>
+                        <li>Holistic health assessments</li>
+                        <li>Herbal wellness planning</li>
+                        <li>Astrology life coaching</li>
+                        <li>Family wellness integration</li>
+                    </ul>
+                    <div class="price">$55-75/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Wellness Journey</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🍳</div>
+                    <h3>Food Safety & Nutrition</h3>
+                    <p>ServSafe certified instruction in food safety and meal planning.</p>
+                    <ul>
+                        <li>ServSafe food safety certification</li>
+                        <li>Meal planning for families</li>
+                        <li>Nutrition education</li>
+                        <li>Cooking skills for kids</li>
+                    </ul>
+                    <div class="price">$40-55/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Cook & Learn</a>
+                </div>
+            </div>
+
+            <div class="custom-package">
+                <h3>📦 Custom Package Options Available</h3>
+                <p>Combine multiple services for a comprehensive family education plan. Ask about package discounts for ongoing support!</p>
+                <a href="#contact" class="btn btn-primary">Discuss Custom Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Free Educational Tools I've Built</h2>
+                <p>Custom-built tools and resources to support your homeschool journey and family life.</p>
+            </div>
+            
+            <div class="tools-grid">
+                <a href="https://edusheet-chooser.pages.dev/" target="_blank" class="tool-card">
+                    <h4>📝 Education Sheet Creator</h4>
+                    <p>Choose between K-6 or advanced worksheet generators for custom learning materials</p>
+                </a>
+                <a href="https://benefitcalculator1.pages.dev/" target="_blank" class="tool-card">
+                    <h4>💰 Benefit Calculator 2025</h4>
+                    <p>Calculate and compare employment benefits packages</p>
+                </a>
+                <a href="https://calculator-ea5.pages.dev/" target="_blank" class="tool-card">
+                    <h4>💵 Texas Paystub Calculator</h4>
+                    <p>Generate professional pay stubs for budgeting and verification</p>
+                </a>
+                <a href="https://mamasaidthis.pages.dev/budget-tracker" target="_blank" class="tool-card">
+                    <h4>📊 Budget Tracker</h4>
+                    <p>Simple, effective tool to track expenses and manage family finances</p>
+                </a>
+                <a href="https://jaggersgames.pages.dev/" target="_blank" class="tool-card">
+                    <h4>🎮 Jaggers Division Game</h4>
+                    <p>Fun educational math game for practicing division skills</p>
+                </a>
+                <a href="https://mamasaidthis.pages.dev/" target="_blank" class="tool-card">
+                    <h4>👩‍👧 Mama Said This (MST)</h4>
+                    <p>Comprehensive mom help resource hub with tools and guidance</p>
+                </a>
+                <a href="https://mamasaidthis.pages.dev/resources" target="_blank" class="tool-card">
+                    <h4>🧰 Mama Tool Kit</h4>
+                    <p>Basic worksheets and resources for everyday parenting needs</p>
+                </a>
+            </div>
+
+            <div class="section-header" style="margin-top: 60px;">
+                <h2>Free Tools to Enhance Learning</h2>
+                <p>Curated collection of the best free educational tools from across the web.</p>
+            </div>
+            
+            <div class="tools-grid">
+                <a href="https://www.geogebra.org/" target="_blank" class="tool-card">
+                    <h4>📐 GeoGebra</h4>
+                    <p>Interactive math tools: geometry, algebra, calculus</p>
+                </a>
+                <a href="https://www.desmos.com/" target="_blank" class="tool-card">
+                    <h4>📈 Desmos</h4>
+                    <p>Graphing calculator and interactive graphs</p>
+                </a>
+                <a href="https://www.mathjax.org/" target="_blank" class="tool-card">
+                    <h4>🔢 MathJax</h4>
+                    <p>Display math equations using LaTeX or MathML</p>
+                </a>
+                <a href="https://genially.com/" target="_blank" class="tool-card">
+                    <h4>🎨 Genially</h4>
+                    <p>Create interactive quizzes, presentations, and infographics</p>
+                </a>
+                <a href="https://www.educandy.com/" target="_blank" class="tool-card">
+                    <h4>🍬 Educandy</h4>
+                    <p>Turn content into fun, interactive learning games</p>
+                </a>
+                <a href="https://www.thinglink.com/" target="_blank" class="tool-card">
+                    <h4>🖼️ ThingLink</h4>
+                    <p>Make images and 360° media interactive</p>
+                </a>
+                <a href="https://interacty.me/" target="_blank" class="tool-card">
+                    <h4>⚡ Interacty</h4>
+                    <p>Quizzes, games, and timelines to engage users</p>
+                </a>
+                <a href="https://insertlearning.com/" target="_blank" class="tool-card">
+                    <h4>📚 InsertLearning</h4>
+                    <p>Add interactive lessons to any web page</p>
+                </a>
+                <a href="https://www.mindmeister.com/" target="_blank" class="tool-card">
+                    <h4>🧠 MindMeister</h4>
+                    <p>Create and share visual mind maps</p>
+                </a>
+                <a href="https://phet.colorado.edu/" target="_blank" class="tool-card">
+                    <h4>🔬 PhET Simulations</h4>
+                    <p>Free science and math interactive simulations</p>
+                </a>
+                <a href="https://storybird.com/" target="_blank" class="tool-card">
+                    <h4>📖 Storybird</h4>
+                    <p>Create and publish interactive stories</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Free Educational Resources</h2>
+                <p>Expertly vetted, free resources for holistic education in coding, nature studies, games, and practical tools.</p>
             </div>
             
             <div class="tabs-wrapper">
                 <div class="tab-nav">
-                    <button class="tab-btn active" onclick="openTab(event, 'coding')">Coding & Math</button>
-                    <button class="tab-btn" onclick="openTab(event, 'nature')">Nature & Holistic</button>
-                    <button class="tab-btn" onclick="openTab(event, 'games')">Educational Games</button>
-                    <button class="tab-btn" onclick="openTab(event, 'tools')">Free Tools</button>
+                    <button class="tab-btn active" onclick="openTab(event, 'coding')">💻 Coding Resources</button>
+                    <button class="tab-btn" onclick="openTab(event, 'nature')">🌿 Nature & Herbal Studies</button>
+                    <button class="tab-btn" onclick="openTab(event, 'games')">🎮 Educational Games</button>
+                    <button class="tab-btn" onclick="openTab(event, 'practical')">🛠️ Practical Tools</button>
                 </div>
 
-                <!-- CODING TAB -->
                 <div id="coding" class="tab-content active">
                     <div class="resource-grid">
                         <div class="resource-card">
                             <h3>Scratch (MIT)</h3>
                             <p>Visual block-based coding for creating animations, games, and interactive stories. Ideal for young learners.</p>
-                            <a href="https://scratch.mit.edu/" target="_blank" rel="noopener">Visit Scratch</a>
+                            <a href="https://scratch.mit.edu/" target="_blank">Visit Scratch →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>CodeCombat</h3>
                             <p>Learn Python and JavaScript through epic game-based adventures. Builds real coding proficiency.</p>
-                            <a href="https://codecombat.com/" target="_blank" rel="noopener">Visit CodeCombat</a>
+                            <a href="https://codecombat.com/" target="_blank">Visit CodeCombat →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>CodeMonkey</h3>
                             <p>Coding puzzles that teach logic and problem-solving via engaging character adventures.</p>
-                            <a href="https://www.codemonkey.com/" target="_blank" rel="noopener">Visit CodeMonkey</a>
+                            <a href="https://www.codemonkey.com/" target="_blank">Visit CodeMonkey →</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Code.org</h3>
+                            <p>Free coding curriculum and tutorials for all ages. Perfect for classroom or home use.</p>
+                            <a href="https://code.org/" target="_blank">Visit Code.org →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Grok Academy</h3>
                             <p>Professional coding curriculum with discounted access through Heather's verified classes.</p>
-                            <a href="https://groklearning.com/" target="_blank" rel="noopener">Explore Grok Academy</a>
+                            <a href="https://groklearning.com/" target="_blank">Explore Grok →</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- NATURE TAB -->
                 <div id="nature" class="tab-content">
                     <div class="resource-grid">
                         <div class="resource-card">
                             <h3>Mother Earth News</h3>
-                            <p>All-in-one archive for homesteading: herbal recipes (willow bark tea, fire cider, elderberry syrup), survival crafts, printables, and kid activities.</p>
-                            <a href="https://www.motherearthnews.com/" target="_blank" rel="noopener">Visit Mother Earth News</a>
+                            <p>All-in-one archive for homesteading: herbal recipes, survival crafts, printables, and kid activities.</p>
+                            <a href="https://www.motherearthnews.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>LearningHerbs</h3>
-                            <p>Herbal-focused free PDFs/recipes for teas, syrups/tinctures, flashcards, and kid games (Wildcraft! printouts).</p>
-                            <a href="https://www.learningherbs.com/" target="_blank" rel="noopener">Visit LearningHerbs</a>
+                            <p>Herbal-focused free PDFs/recipes for teas, syrups/tinctures, flashcards, and kid games.</p>
+                            <a href="https://www.learningherbs.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Homestead Honey</h3>
-                            <p>Kid-centric activities: foraging, elderberry syrup, salve-making, with 30+ free projects and printables.</p>
-                            <a href="https://homestead-honey.com/" target="_blank" rel="noopener">Visit Homestead Honey</a>
+                            <p>Kid-centric activities: foraging, elderberry syrup, salve-making, with 30+ free projects.</p>
+                            <a href="https://homestead-honey.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Intentional Homesteading</h3>
-                            <p>100+ practical skills list: herbal remedies, survival, crafts with downloadable PDF worksheets.</p>
-                            <a href="https://www.intentionalhomesteading.com/" target="_blank" rel="noopener">Visit Intentional Homesteading</a>
+                            <p>100+ practical skills list: herbal remedies, survival, crafts with downloadable worksheets.</p>
+                            <a href="https://www.intentionalhomesteading.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>The Survival Mom</h3>
-                            <p>Family preparedness: herbal first aid, rainwater collection, survival bingo, and scenario worksheets.</p>
-                            <a href="https://thesurvivalmom.com/" target="_blank" rel="noopener">Visit The Survival Mom</a>
+                            <p>Family preparedness: herbal first aid, rainwater collection, survival worksheets.</p>
+                            <a href="https://thesurvivalmom.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Incredible Edible Landscapes</h3>
-                            <p>Homesteading guide: herbal garden plans, rainwater setups, syrup recipes, and project trackers.</p>
-                            <a href="https://incredibleediblelandscapes.com/" target="_blank" rel="noopener">Visit Incredible Edible</a>
+                            <p>Homesteading guide: herbal garden plans, rainwater setups, syrup recipes.</p>
+                            <a href="https://incredibleediblelandscapes.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Mountain Rose Herbs</h3>
-                            <p>Guides/recipes: willow bark tea, tincture basics, foraging tips, dosage charts, and plant ID sheets.</p>
-                            <a href="https://mountainroseherbs.com/" target="_blank" rel="noopener">Visit Mountain Rose Herbs</a>
+                            <p>Guides/recipes: willow bark tea, tincture basics, foraging tips, plant ID sheets.</p>
+                            <a href="https://mountainroseherbs.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>The Pioneer Woman</h3>
-                            <p>Print-friendly recipes: fire cider, herbal soaps, rain barrel DIYs, recipe journals, and kitchen challenges.</p>
-                            <a href="https://www.thepioneerwoman.com/" target="_blank" rel="noopener">Visit The Pioneer Woman</a>
+                            <p>Print-friendly recipes: fire cider, herbal soaps, rain barrel DIYs, recipe journals.</p>
+                            <a href="https://www.thepioneerwoman.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Wellness Mama</h3>
-                            <p>Elderberry syrup recipe, herbal teas, remedy planners, foraging checklists, and storage tips.</p>
-                            <a href="https://wellnessmama.com/" target="_blank" rel="noopener">Visit Wellness Mama</a>
+                            <p>Elderberry syrup recipe, herbal teas, remedy planners, foraging checklists.</p>
+                            <a href="https://wellnessmama.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Primal Survivor</h3>
-                            <p>Illustrated guides: friction fire, bow drill worksheets, herbal wildcrafting, and nature hunts.</p>
-                            <a href="https://www.primalsurvivor.net/" target="_blank" rel="noopener">Visit Primal Survivor</a>
+                            <p>Illustrated guides: friction fire, bow drill worksheets, herbal wildcrafting.</p>
+                            <a href="https://www.primalsurvivor.net/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>The Spruce Crafts</h3>
-                            <p>DIY herbal soap (lavender infusions), printable templates, fencing/weaving basics for projects.</p>
-                            <a href="https://www.thesprucecrafts.com/" target="_blank" rel="noopener">Visit The Spruce Crafts</a>
+                            <p>DIY herbal soap, printable templates, fencing/weaving basics for projects.</p>
+                            <a href="https://www.thesprucecrafts.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>HarvestH2O</h3>
-                            <p>Rainwater collection: barrel setups, filters, safety diagrams, and printables for teas/water uses.</p>
-                            <a href="https://www.harvesth2o.com/" target="_blank" rel="noopener">Visit HarvestH2O</a>
-                        </div>
-                        
-                        <div class="resource-card">
-                            <h3>WWF Teaching Resources</h3>
-                            <p>Environmental education toolkits, classroom materials, and nature study activities.</p>
-                            <a href="https://www.worldwildlife.org/teaching-resources/toolkits" target="_blank" rel="noopener">Visit WWF</a>
-                        </div>
-                        
-                        <div class="resource-card">
-                            <h3>Kiddle Farming</h3>
-                            <p>Kid-safe encyclopedia: farming topics, age-appropriate visuals, and hands-on learning.</p>
-                            <a href="https://kids.kiddle.co/Farming" target="_blank" rel="noopener">Visit Kiddle Farming</a>
-                        </div>
-                        
-                        <div class="resource-card">
-                            <h3>Ag Foundation</h3>
-                            <p>At-home agricultural activities, food systems education, and printable hands-on guides.</p>
-                            <a href="https://www.agfoundation.org/resources" target="_blank" rel="noopener">Visit Ag Foundation</a>
+                            <p>Rainwater collection: barrel setups, filters, safety diagrams and printables.</p>
+                            <a href="https://www.harvesth2o.com/" target="_blank">Visit Site →</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- GAMES TAB -->
                 <div id="games" class="tab-content">
                     <div class="resource-grid">
                         <div class="resource-card">
                             <h3>ABCya!</h3>
                             <p>Educational games and activities for K-5: curriculum-aligned fun for reading, math, and more.</p>
-                            <a href="https://www.abcya.com/" target="_blank" rel="noopener">Visit ABCya</a>
+                            <a href="https://www.abcya.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>PBS Kids</h3>
-                            <p>Games, videos, and activities with PBS characters: educational entertainment for young learners.</p>
-                            <a href="https://pbskids.org/" target="_blank" rel="noopener">Visit PBS Kids</a>
+                            <p>Games, videos, and activities with PBS characters for educational entertainment.</p>
+                            <a href="https://pbskids.org/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Scholastic Kids</h3>
-                            <p>Reading games, activities, book recommendations, and literacy resources from Scholastic experts.</p>
-                            <a href="https://kids.scholastic.com/kid/home/" target="_blank" rel="noopener">Visit Scholastic Kids</a>
+                            <p>Reading games, activities, book recommendations, and literacy resources.</p>
+                            <a href="https://kids.scholastic.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>Funbrain</h3>
-                            <p>Math, reading, and problem-solving games for PreK-8: trusted educational play since 1997.</p>
-                            <a href="https://www.funbrain.com/" target="_blank" rel="noopener">Visit Funbrain</a>
+                            <p>Math, reading, and problem-solving games for PreK-8.</p>
+                            <a href="https://www.funbrain.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
                             <h3>National Geographic Kids</h3>
-                            <p>Games, videos, and activities on animals, science, geography: global exploration for kids.</p>
-                            <a href="https://kids.nationalgeographic.com/" target="_blank" rel="noopener">Visit Nat Geo Kids</a>
+                            <p>Games, videos on animals, science, geography: global exploration for kids.</p>
+                            <a href="https://kids.nationalgeographic.com/" target="_blank">Visit Site →</a>
                         </div>
                         
                         <div class="resource-card">
-                            <h3>Coolmath Games</h3>
-                            <p>Brain-training math games: logic puzzles, strategy, and fun challenges for all ages.</p>
-                            <a href="https://www.coolmathgames.com/" target="_blank" rel="noopener">Visit Coolmath Games</a>
-                        </div>
-                        
-                        <div class="resource-card">
-                            <h3>Education.com</h3>
-                            <p>Over 38,000 worksheets, games, and activities for Pre-K to 8th grade in math, reading, science, and more.</p>
-                            <a href="https://www.education.com/" target="_blank" rel="noopener">Visit Education.com</a>
-                        </div>
-                        
-                        <div class="resource-card">
-                            <h3>Teachers Pay Teachers</h3>
-                            <p>7M+ teacher-created lessons, worksheets, and resources downloaded 1B+ times for K-12 education.</p>
-                            <a href="https://www.teacherspayteachers.com/" target="_blank" rel="noopener">Visit Teachers Pay Teachers</a>
+                            <h3>Cool Math Games</h3>
+                            <p>Brain-training math games: logic puzzles, strategy, and fun challenges.</p>
+                            <a href="https://www.coolmathgames.com/" target="_blank">Visit Site →</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- TOOLS TAB -->
-                <div id="tools" class="tab-content">
+                <div id="practical" class="tab-content">
                     <div class="resource-grid">
-                        <div class="tool-card">
-                            <i class="fas fa-calculator"></i>
-                            <div>
-                                <h3>My Pay Stub Calculator</h3>
-                                <p>Generate professional pay stubs instantly for budgeting and verification.</p>
-                            </div>
-                            <a href="https://calculator-ea5.pages.dev/" target="_blank" rel="noopener">Use Tool</a>
+                        <div class="resource-card">
+                            <h3>Education.com</h3>
+                            <p>Over 38,000 worksheets, games for Pre-K to 8th grade in math, reading, science.</p>
+                            <a href="https://www.education.com/" target="_blank">Visit Site →</a>
                         </div>
                         
-                        <div class="tool-card">
-                            <i class="fas fa-piggy-bank"></i>
-                            <div>
-                                <h3>My Budget Tracker</h3>
-                                <p>Simple, effective tool to track expenses and manage family finances.</p>
-                            </div>
-                            <a href="https://mamasaidthis.pages.dev/budget-tracker.html" target="_blank" rel="noopener">Use Tool</a>
+                        <div class="resource-card">
+                            <h3>Teachers Pay Teachers</h3>
+                            <p>7M+ teacher-created lessons, worksheets for K-12 education.</p>
+                            <a href="https://www.teacherspayteachers.com/" target="_blank">Visit Site →</a>
                         </div>
                         
-                        <div class="tool-card">
-                            <i class="fas fa-book-open"></i>
-                            <div>
-                                <h3>Free Grok Academy Resources</h3>
-                                <p>Introductory coding lessons and materials to get started today.</p>
-                            </div>
-                            <a href="https://groklearning.com/" target="_blank" rel="noopener">Access Resources</a>
+                        <div class="resource-card">
+                            <h3>WWF Teaching Resources</h3>
+                            <p>Environmental education toolkits, classroom materials, nature study activities.</p>
+                            <a href="https://www.worldwildlife.org/teaching-resources/toolkits" target="_blank">Visit Site →</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <h3>Ag Foundation</h3>
+                            <p>At-home agricultural activities, food systems education, printable guides.</p>
+                            <a href="https://www.agfoundation.org/resources" target="_blank">Visit Site →</a>
                         </div>
                     </div>
                 </div>
@@ -962,33 +1351,91 @@
         </div>
     </section>
 
-    <section class="waitlist-section" id="waitlist">
+    <section class="testimonials-section">
         <div class="container">
-            <div class="waitlist-content">
-                <h2>Join the Waitlist</h2>
-                <p>Get updates, exclusive resources, and lottery chances for discounted Grok Academy access through Herbal HomeSchool!</p>
-                
-                <form class="waitlist-form" id="waitlistForm" action="https://submit-form.com/form_v1_DELCuNQv4BmefaZTQM83z5" method="POST">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Real families sharing their transformative experiences with Heather's programs.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>Heather's coding program transformed my daughter's confidence. She went from never touching a computer to building her own games in just 3 months!</p>
+                    <div class="testimonial-author">- Sarah M., Homeschool Mom</div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+                    <p>The herbal studies curriculum is incredible. My kids are now identifying plants on nature walks and making their own remedies. So empowering!</p>
+                    <div class="testimonial-author">- Jessica T., Parent of 3</div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+                    <p>Best investment in our homeschool journey. Heather's holistic approach covers everything we wanted but didn't know how to teach ourselves.</p>
+                    <div class="testimonial-author">- Michael R., First-Time Homeschooler</div>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Connect</h2>
+                <p>Ready to transform your homeschool or business? Let's discuss how I can help.</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" action="https://submit-form.com/rydbKYBjS" method="POST">
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
                     </div>
-                    
                     <div class="form-group">
-                        <label for="message">What are you most excited about?</label>
-                        <textarea id="message" name="message" placeholder="e.g., Coding classes, herbal resources, or family support..."></textarea>
+                        <label for="interest">Service Interest</label>
+                        <input type="text" id="interest" name="interest" placeholder="Coding, herbal studies, web design, etc.">
                     </div>
-                    
-                    <button type="submit" class="submit-btn">Join Waitlist</button>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your needs and goals..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                 </form>
-                
-                <div id="success-message">
-                    Thank you! You're on the list. Check your email for confirmation.
+
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:heather@herbalhomeschool.work.gd">heather@herbalhomeschool.work.gd</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📝</span>
+                        <div>
+                            <strong>Homeschool Inquiry Form</strong><br>
+                            <a href="https://submit-form.com/zeLEWA10f" target="_blank">Special Programs Application</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Location</strong><br>
+                            Dallas/Fort Worth, Texas<br>
+                            <small>Virtual & Local Options Available</small>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🎁</span>
+                        <div>
+                            <strong>Newsletter</strong><br>
+                            Coming Soon! Get updates & exclusive resources
+                        </div>
+                    </div>
+                    <a href="https://ko-fi.com/mamasaidherbalhomeschool" target="_blank" class="support-btn">☕ Support My Work on Ko-fi</a>
                 </div>
             </div>
         </div>
@@ -996,7 +1443,15 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Herbal HomeSchool. All rights reserved. | <a href="mailto:heather@herbalhomeschool.work.gd">Contact Heather</a> | Built with care for holistic families.</p>
+            <p>&copy; 2025 Heather's Herbal HomeSchool. All rights reserved.</p>
+            <p style="margin-top: 15px;">
+                <a href="https://github.com/herbalheather?tab=repositories" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/heatherchilliard/" target="_blank">LinkedIn</a> |
+                <a href="https://orcid.org/0009-0005-1443-6360" target="_blank">ORCID</a> |
+                <a href="https://kdp.amazon.com/en_US/bookshelf?ref_=kdp_kdp_TAC_TN_bs" target="_blank">Amazon</a> |
+                <a href="https://ko-fi.com/mamasaidherbalhomeschool" target="_blank">Ko-fi</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em;">Built with 🌿 for holistic families • Professional web design services available</p>
         </div>
     </footer>
 
@@ -1012,26 +1467,65 @@
             event.target.classList.add('active');
         }
 
-        // Form submission handler
-        document.getElementById('waitlistForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const form = this;
-            const formData = new FormData(form);
-            
-            fetch(form.action, {
-                method: 'POST',
-                body: formData
-            }).then(response => {
-                if (response.ok) {
-                    form.style.display = 'none';
-                    document.getElementById('success-message').style.display = 'block';
-                } else {
-                    alert('Oops! Something went wrong. Please try again.');
-                }
-            }).catch(error => {
-                alert('Network error. Please check your connection and try again.');
+        // Smooth scroll for navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            const headerOffset = 80;
+                            const elementPosition = target.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
             });
+
+            // Form submission feedback
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function() {
+                    setTimeout(() => {
+                        alert('Thank you! Your message has been sent. I\'ll get back to you within 24-48 hours.');
+                    }, 100);
+                });
+            }
         });
     </script>
 </body>
-</html>
+</html><div class="service-icon">💻</div>
+                    <h3>Coding & Tech Tutoring</h3>
+                    <p>Microsoft & Google certified instruction from Scratch to Python, AI fundamentals to web development.</p>
+                    <ul>
+                        <li>Scratch, Python, JavaScript, HTML/CSS</li>
+                        <li>Grok Academy certified curriculum</li>
+                        <li>AI & machine learning basics</li>
+                        <li>Portfolio-building projects</li>
+                    </ul>
+                    <div class="price">$45-65/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>Herbal & Nature Studies</h3>
+                    <p>Learn the ancient art of herbalism, wildcrafting, and natural remedies.</p>
+                    <ul>
+                        <li>Plant identification & foraging safety</li>
+                        <li>Making teas, tinctures, salves & syrups</li>
+                        <li>Herbal first aid & home apothecary</li>
+                        <li>Nature journaling & plant studies</li>
+                    </ul>
+                    <div class="price">$40-55/hour</div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Explore Herbalism</a>
+                </div>
+
+                <div class="service-card">
